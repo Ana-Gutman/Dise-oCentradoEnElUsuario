@@ -1,0 +1,1680 @@
+﻿
+<!DOCTYPE HTML>
+<html lang="es" >
+
+<head>
+    <title>URUBUS | Pasajeros IDA</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta name="keywords" content="" />
+    <meta name="description" content="URUBUS">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="shortcut icon" href="//d11xh5afwbv11j.cloudfront.net/hawaii/prod/assets/favicon.ico" />
+    <!-- GOOGLE FONTS -->
+    <link href='//fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600' rel='stylesheet' type='text/css'>
+    <!-- /GOOGLE FONTS -->
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="//docy6puy1jmhs.cloudfront.net/uluwatu/prod/assets/main.css"/>
+    
+    <!--JVDK-->
+
+  
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="https://www.urubus.com.uy/js/jquery.js">\x3C/script>')
+    </script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://www.urubus.com.uy/css/custom.min2.css" />
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PF6GHT');</script>
+<!-- End Google Tag Manager -->
+</head>
+
+<body onload="myFunction()">   
+    <div class="loader" id="loader"></div>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src='https://www.googletagmanager.com/ns.html?id=GTM-PF6GHT'
+height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script src="https://www.urubus.com.uy/js/ios_app.js"></script>
+<nav id="menu">
+        <ul>
+            <li style=""><a href="https://www.urubus.com.uy/es/" onclick="unshowPage('');"><i class="fa fa-home">&nbsp;&nbsp;</i>Inicio</a></li>
+            <li class=" hidden"> <a href="#ini-ses" onclick="unshowPage('');"><i class="fa fa-user ">&nbsp;&nbsp;</i>Mi cuenta</a> </li>
+            <li class="hidden"> <a href="#mm-2"><i class="fa fa-user ">&nbsp;&nbsp;</i>Mi cuenta</a>
+                <ul>
+                    <li class="hidden"><a href="https://www.urubus.com.uy/es/mis-boletos" onclick="unshowPage('');"><i class="fa fa-ticket ">&nbsp;&nbsp;</i>Mis Pasajes</a></li>
+                    <li class="hidden"><a href="https://www.urubus.com.uy/es/mi-perfil" onclick="unshowPage('');" rel="nofollow"><i class="fa fa-user ">&nbsp;&nbsp;</i>Mi cuenta</a></li>
+                    <li class="hidden" style="display:none;" id="jvdk"><a href="https://www.urubus.com.uy/es/cancelar-pasaje" rel="nofollow" onclick="unshowPage('');"><i class="fa fa-times ">&nbsp;&nbsp;</i>Cancelar Pasaje</a></li>
+                    <li class="hidden"><a href="https://www.urubus.com.uy/es/mi-contrasena-cambio" onclick="unshowPage('');" rel="nofollow"><i class="fa fa-edit ">&nbsp;&nbsp;</i>Cambiar Contraseña</a></li>
+                    <li class="hidden"><a href="https://www.urubus.com.uy/es/salir" onclick="unshowPage('');" rel="nofollow"><i class="fa fa-sign-out ">&nbsp;&nbsp;</i>Salir</a></li>
+                </ul>
+            </li>
+            <li> <a href="https://www.urubus.com.uy/es/rutas"><i class="fa fa-map">&nbsp;&nbsp;</i>Rutas y Destinos</a>
+            <li><a href="#mm-3"><i class="fa fa-clock-o ">&nbsp;&nbsp;</i>Horarios</a>
+                <ul>
+    <li><a href="https://www.urubus.com.uy/es/Montevideo-a-Aeropuerto-Laguna-del-Sauce" onclick="unshowPage('');">Montevideo a Aeropuerto Laguna del Sauce</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Montevideo-a-Artigas" onclick="unshowPage('');">Montevideo a Artigas</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Montevideo-a-Atlantida" onclick="unshowPage('');">Montevideo a Atlantida</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Montevideo-a-Araminda" onclick="unshowPage('');">Montevideo a Araminda</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Montevideo-a-Aguas-Dulces" onclick="unshowPage('');">Montevideo a Aguas Dulces</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Montevideo-a-Barra-de-Valizas" onclick="unshowPage('');">Montevideo a Barra de Valizas</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Montevideo-a-Chuy" onclick="unshowPage('');">Montevideo a Chuy</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Montevideo-a-Cabo-Polonio" onclick="unshowPage('');">Montevideo a Cabo Polonio</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Montevideo-a-Carmelo" onclick="unshowPage('');">Montevideo a Carmelo</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Montevideo-a-Castillos" onclick="unshowPage('');">Montevideo a Castillos</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Montevideo-a-Colonia" onclick="unshowPage('');">Montevideo a Colonia</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Montevideo-a-Cuchilla-Alta" onclick="unshowPage('');">Montevideo a Cuchilla Alta</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Montevideo-a-Dolores" onclick="unshowPage('');">Montevideo a Dolores</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Montevideo-a-Jose-Ignacio" onclick="unshowPage('');">Montevideo a Jose Ignacio</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Montevideo-a-Jaureguiberry" onclick="unshowPage('');">Montevideo a Jaureguiberry</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Montevideo-a-Maldonado" onclick="unshowPage('');">Montevideo a Maldonado</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Montevideo-a-Manantiales" onclick="unshowPage('');">Montevideo a Manantiales</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Montevideo-a-Minas" onclick="unshowPage('');">Montevideo a Minas</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Minas-a-Punta-del-Este" onclick="unshowPage('');">Minas a Punta del Este</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Montevideo-a-Laguna-Garzon" onclick="unshowPage('');">Montevideo a Laguna Garzon</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Montevideo-a-Barra-de-Maldonado" onclick="unshowPage('');">Montevideo a La Barra (PDE, Maldonado)</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Montevideo-a-La-Pedrera" onclick="unshowPage('');">Montevideo a La Pedrera</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Montevideo-a-La-Paloma" onclick="unshowPage('');">Montevideo a La Paloma</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Montevideo-a-Pan-de-Azucar" onclick="unshowPage('');">Montevideo a Pan de Azucar</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Montevideo-a-Piriapolis" onclick="unshowPage('');">Montevideo a Piriapolis</a></li>     
+    <li><a href="https://www.urubus.com.uy/es/Montevideo-a-Punta-del-Diablo" onclick="unshowPage('');">Montevideo a Punta del Diablo</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Montevideo-a-Punta-del-Este" onclick="unshowPage('');">Montevideo a Punta del Este</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Montevideo-a-Punta-Negra" onclick="unshowPage('');">Montevideo a Punta Negra</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Montevideo-a-Rivera" onclick="unshowPage('');">Montevideo a Rivera</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Montevideo-a-Rocha" onclick="unshowPage('');">Montevideo a Rocha</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Montevideo-a-San-Carlos" onclick="unshowPage('');">Montevideo a San-Carlos</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Montevideo-a-Santa-Ana" onclick="unshowPage('');">Montevideo a Santa Ana</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Montevideo-a-Santa-Lucia-del-Este" onclick="unshowPage('');">Montevideo a Santa Lucía del Este</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Montevideo-a-Tacuarembo" onclick="unshowPage('');">Montevideo a Tacuarembó</a></li>
+    
+    <li>&nbsp;&nbsp;</li>    
+    <li><a href="https://www.urubus.com.uy/es/Aeropuerto-Carrasco-a-Aeropuerto-Laguna-del-Sauce" onclick="unshowPage('');">Aeropuerto Carrasco a Aeropuerto Laguna del Sauce</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Aeropuerto-Carrasco-a-Jose-Ignacio" onclick="unshowPage('');">Aeropuerto Carrasco a Jose Ignacio</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Aeropuerto-Carrasco-a-Maldonado" onclick="unshowPage('');">Aeropuerto Carrasco a Maldonado</a></li>        
+    <li><a href="https://www.urubus.com.uy/es/Aeropuerto-Carrasco-a-Manantiales" onclick="unshowPage('');">Aeropuerto Carrasco a Manantiales</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Aeropuerto-Carrasco-a-Laguna-Garzon" onclick="unshowPage('');">Aeropuerto Carrasco a Laguna Garzon</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Aeropuerto-Carrasco-a-Barra-de-Maldonado" onclick="unshowPage('');">Aeropuerto Carrasco a La Barra</a></li>    
+    <li><a href="https://www.urubus.com.uy/es/Aeropuerto-Carrasco-a-Piriapolis" onclick="unshowPage('');">Aeropuerto Carrasco a Piriapolis</a></li>     
+    <li><a href="https://www.urubus.com.uy/es/Aeropuerto-Carrasco-a-Punta-Ballena" onclick="unshowPage('');">Aeropuerto Carrasco a Punta Ballena</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Aeropuerto-Carrasco-a-Punta-del-Este" onclick="unshowPage('');">Aeropuerto Carrasco a Punta del Este</a></li>    
+    
+    <li>&nbsp;&nbsp;</li>
+    <li><a href="https://www.urubus.com.uy/es/18-de-Julio-a-San-Carlos" onclick="unshowPage('');">18-de-Julio a San-Carlos</a></li>      
+    <li><a href="https://www.urubus.com.uy/es/18-de-Julio-a-Montevideo" onclick="unshowPage('');">18-de-Julio a Montevideo</a></li>  
+    <li><a href="https://www.urubus.com.uy/es/18-de-Julio-a-Treinta-y-Tres" onclick="unshowPage('');">18-de-Julio a Treinta y Tres</a></li>          
+              
+    <li>&nbsp;&nbsp;</li> 
+    <li><a href="https://www.urubus.com.uy/es/Carmelo-a-Colonia" onclick="unshowPage('');">Carmelo a Colonia</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Carmelo-a-Dolores" onclick="unshowPage('');">Carmelo a Dolores</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Carmelo-a-Montevideo" onclick="unshowPage('');">Carmelo a Montevideo</a></li>    
+    <li><a href="https://www.urubus.com.uy/es/Carmelo-a-Mercedes" onclick="unshowPage('');">Carmelo a Mercedes</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Carmelo-a-Libertad" onclick="unshowPage('');">Carmelo a Libertad</a></li>
+    
+    <li>&nbsp;&nbsp;</li> 
+    <li><a href="https://www.urubus.com.uy/es/Colonia-a-Carmelo" onclick="unshowPage('');">Colonia a Carmelo</a></li>      
+    <li><a href="https://www.urubus.com.uy/es/Colonia-a-Mercedes" onclick="unshowPage('');">Colonia a Mercedes</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Colonia-a-Montevideo" onclick="unshowPage('');">Colonia a Montevideo</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Colonia-a-Nueva-Palmira" onclick="unshowPage('');">Colonia a Nueva Palmira</a></li>
+    
+    <li>&nbsp;&nbsp;</li> 
+    <li><a href="https://www.urubus.com.uy/es/Colonia-Valdense-a-Montevideo" onclick="unshowPage('');">Colonia Valdense a Montevideo</a></li>  
+    
+    <li>&nbsp;&nbsp;</li>
+    <li><a href="https://www.urubus.com.uy/es/Punta-del-Este-a-Aeropuerto-Carrasco" onclick="unshowPage('');">Punta del Este a Aeropuerto Carrasco</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Punta-del-Este-a-Durazno" onclick="unshowPage('');">Punta del Este a Durazno</a></li>    
+    <li><a href="https://www.urubus.com.uy/es/Punta-del-Este-a-Salto" onclick="unshowPage('');">Punta del Este a Salto</a></li>        
+    
+    <li>&nbsp;&nbsp;</li>
+    <li><a href="https://www.urubus.com.uy/es/Punta-Colorada-a-Montevideo" onclick="unshowPage('');">Punta Colorada a Montevideo</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Punta-Colorada-a-Peaje-Solis" onclick="unshowPage('');">Punta Colorada a Peaje Solis</a></li>
+    
+    <li>&nbsp;&nbsp;</li>
+    <li><a href="https://www.urubus.com.uy/es/Punta-Negra-a-Aeropuerto-Carrasco" onclick="unshowPage('');">Punta Negra a Aeropuerto Carrasco</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Punta-Negra-a-Montevideo" onclick="unshowPage('');">Punta Negra a Montevideo</a></li>
+    <li><a href="https://www.urubus.com.uy/es/Punta-Negra-a-Peaje-Solis" onclick="unshowPage('');">Punta Negra a Peaje Solis</a></li>    
+    
+    <li>&nbsp;&nbsp;</li>
+    <li><a href="https://www.urubus.com.uy/es/Rivera-a-Florianopolis" onclick="unshowPage('');">Rivera a Florianópolis</a></li>
+</ul>
+            </li>
+            <li><a href="https://www.urubus.com.uy/es/terminales/terminales-de-omnibus-micros-uruguay" onclick="unshowPage('');"><i class="fa fa-map-pin ">&nbsp;&nbsp;</i>Terminales</a></li>
+            <li><a href="https://www.urubus.com.uy/es/empresas/empresas-de-omnibus-micros-en-uruguay" onclick="unshowPage('');"><i class="fa fa-bus">&nbsp;&nbsp;</i>Empresas</a></li>
+            <li><a href="#mm-4"><i class="fa fa-road ">&nbsp;&nbsp;</i>Viaje</a>
+                <ul>
+                    <li><a href="https://www.urubus.com.uy/es/antes-de-viajar/antes-de-viajar-en-omnibus-micros-uruguay">Antes de Viajar</a>
+                        <ul>
+                            <li><a href="https://www.urubus.com.uy/es/antes-de-viajar/venta-de-pasajes-omnibus-micros-uruguay" onclick="unshowPage('');">Venta de pasajes</a></li>
+                            <li><a href="https://www.urubus.com.uy/es/antes-de-viajar/terminal-estacion-de-salida" onclick="unshowPage('');">Terminal de Salida</a></li>
+                            <li><a href="https://www.urubus.com.uy/es/antes-de-viajar/pasajes-de-omnibus-micros-uruguay" onclick="unshowPage('');">Pasajes</a></li>
+                            <li><a href="https://www.urubus.com.uy/es/antes-de-viajar/documento-de-identidad-omnibus-micros-uruguay" onclick="unshowPage('');">Documento de Identidad</a></li>
+                            <li><a href="https://www.urubus.com.uy/es/antes-de-viajar/equipaje-omnibus-micros-uruguay" onclick="unshowPage('');">Equipaje</a></li>
+                            <li><a href="https://www.urubus.com.uy/es/antes-de-viajar/subir-al-bus-micro-uruguay" onclick="unshowPage('');">Acceso a Bordo</a></li>
+                            <li><a href="https://www.urubus.com.uy/es/antes-de-viajar/seleccion-de-asientos-buses-omnibus-micros-uruguay" onclick="unshowPage('');">Selección de Asientos</a></li>
+                            <li><a href="https://www.urubus.com.uy/es/antes-de-viajar/familia-y-niños-en-buses-omnibus-micros-uruguay" onclick="unshowPage('');">Familia y Niños</a></li>
+                            <li><a href="https://www.urubus.com.uy/es/antes-de-viajar/personas-con-movilidad-reducida-omnibus-micros-uruguay" onclick="unshowPage('');">Personas con Movilidad reducida</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://www.urubus.com.uy/es/durante-el-viaje/viajando-en-omnibus-micros-uruguay" onclick="unshowPage('');">Durante El Viaje</a>
+                        <ul>
+                            <li><a href="https://www.urubus.com.uy/es/durante-el-viaje/unidades-omnibus-micros-uruguay" onclick="unshowPage('');">Ómnibus</a></li>
+                            <li><a href="https://www.urubus.com.uy/es/durante-el-viaje/conductor-guarda-de-omnibus-micros-uruguay" onclick="unshowPage('');">Conductor / Guarda</a></li>
+                            <li><a href="https://www.urubus.com.uy/es/durante-el-viaje/asientos-y-confort-de-omnibus-micros-uruguay" onclick="unshowPage('');">Asientos y Confort</a></li>
+                            <li><a href="https://www.urubus.com.uy/es/durante-el-viaje/servicios-a-bordo-de-omnibus-micros-uruguay" onclick="unshowPage('');">Servicios a bordo</a></li>
+                            <li><a href="https://www.urubus.com.uy/es/durante-el-viaje/informacion-omnibus-micros-uruguay" onclick="unshowPage('');">Información sobre su Viaje</a></li>
+                            <li><a href="https://www.urubus.com.uy/es/durante-el-viaje/reglas-generales-en-omnibus-micros-uruguay" onclick="unshowPage('');">Reglas Generales a bordo</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://www.urubus.com.uy/es/al-finalizar-el-viaje/" onclick="unshowPage('');">Al Llegar</a>
+                        <ul>
+                            <li><a href="https://www.urubus.com.uy/es/al-finalizar-el-viaje/desembarque-omnibus-micros-uruguay" onclick="unshowPage('');">Desembarque</a></li>
+                            <li><a href="https://www.urubus.com.uy/es/al-finalizar-el-viaje/terminal-estacion-de-llegada-omnibus-micros-uruguay" onclick="unshowPage('');">Terminal de Llegada</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="https://www.urubus.com.uy/es/ayuda" onclick="unshowPage('');"><i class="fa fa-question-circle ">&nbsp;&nbsp;</i>Ayuda</a>
+                <!-- 20170602 !-->
+            </li>
+            <li><a href="https://www.urubus.com.uy/es/contacto" onclick="unshowPage('');"><i class="fa fa-phone ">&nbsp;&nbsp;</i>Contacto</a></li>
+        </ul>
+    </nav>    <div id="big-container" style="display: none;">
+        <header id="main-header"  data-position="fixed" data-tap-toggle="false" data-hide-during-focus="false" style="height:55px;">
+            <div class="header-top navbar-static-top" style=" " data-position="fixed" data-tap-toggle="false" data-hide-during-focus="false">
+                <div class="container">                    
+                    <div class="row">
+                        <div class="col-xs-2 col-sm-1 col-md-1"> <a href="#menu" id="mmenuButton" style="z-index:20;position:sticky;"><span></span></a> </div>
+                        <div class="col-xs-7 col-sm-7 col-md-7 pl30 pr0" style="padding-top:3px;">
+                            <a class="logo" href="https://www.urubus.com.uy/es/" rel="nofollow" onclick="unshowPage('');"> <img class="" src="//d1tq1fzwp39b5w.cloudfront.net/itamambuca/prod/assets/urubus_black.png"  alt="URUBUS Tus pasajes online" title="URUBUS Tus pasajes online" /> </a>
+                        </div>
+                        <div class="col-xs-1 col-md-head-4">
+                            <div class="top-user-area clearfix">
+                                <ul class="top-user-area-list list list-horizontal list-border">
+                                    <li class="nav-drop top-user-area-avatar  hidden" style="cursor:pointer;">
+                                        <a onclick="window.location.href='#ini-ses'" href="#ini-ses" rel="nofollow"> <img class="origin round" src="//d11xh5afwbv11j.cloudfront.net/hawaii/prod/assets/user_40x40.png" alt="Mi cuenta" title="Mi cuenta" /> <span class="user-hello">Mi cuenta</span> </a>
+                                    </li>
+                                    <li class="nav-drop top-user-area-avatar hidden" style="cursor:pointer;">
+                                        <a><img class="origin round" src="//d11xh5afwbv11j.cloudfront.net/hawaii/prod/assets/user_40x40.png" alt="Mi cuenta" title="" /><span class="user-hello"></span><i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a>
+                                        <ul class="list nav-drop-menu">
+                                            <li class="hidden"><a rel="nofollow" href="mis-boletos" onclick="window.location=window.location.href='mis-boletos'"><i class="fa fa-ticket left"></i><span >&nbsp;&nbsp;Mis Pasajes</span></a> </li>
+                                            <li class="hidden"><a rel="nofollow" href="mi-perfil" onclick="window.location=window.location.href='mi-perfil'"><i class="fa fa-user left"></i><span >&nbsp;&nbsp;Mi cuenta</span></a> </li>
+                                            <li class="hidden" style="display:none;" id="jvdk"><a href="#" onclick="window.location=window.location.href='#'"><i class="fa fa-times left"></i><span >&nbsp;&nbsp;Cancelar Pasaje</span></a> </li>
+                                            <li class="hidden"><a rel="nofollow" href="mi-contrasena-cambio" onclick="window.location=window.location.href='mi-contrasena-cambio'"><i class="fa fa-edit left"></i><span >&nbsp;&nbsp;Cambiar Contraseña</span></a> </li>
+                                            <li class="hidden"><a rel="nofollow" href="salir" onclick="window.location=window.location.href='salir'"><i class="fa fa-sign-out left"></i><span >&nbsp;&nbsp;Salir</span></a> </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-drop currency-list hidden-xs"> 
+                                          <p class="">UYU $</p>
+                                      <!--   <a href="#">UYU $<i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a>
+                                       <ul class="list nav-drop-menu currency-list hidden">
+                                            <li class="hidden"><a href="#">USD<span class="right">&nbsp;US$</span></a> </li>
+                                            <li class="hidden"><a href="#">EUR<span class="right">€</span></a> </li>
+                                            <li class="hidden"><a href="#">ARS<span class="right">AR$</span></a> </li>
+                                            <li><a href="#">BRL<span class="right">R$</span></a> </li>
+                                            <li style="display:none;"><a href="#">GBP<span class="right">£</span></a> </li>
+                                        </ul>-->
+                                    </li>
+                                    <li class="top-user-area-lang nav-drop" style="padding-top:3px;">
+                                        <a href="#">
+                                            <div class="sprite-icons-es"></div><i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i> </a>
+                                        <ul class="list nav-drop-menu" >
+                                            <li class="">
+                                                <a title="English" href="#en" style="border-radius:0 !important;" rel="nofollow" onclick="unshowPage('');window.location=window.location.href.replace('/es/', '/en/').replace('/?lang=es', '')">
+                                                    <div class="sprite-icons-us"></div><span class="right"></span> </a>
+                                            </li>
+                                            <li class="hidden">
+                                                <a title="Español" href="#es" style="border-radius:0 !important;" rel="nofollow" onclick="unshowPage('');window.location=window.location.href.replace('/es/', '/es/').replace('/?lang=es', '')">
+                                                    <div class="sprite-icons-uy"></div><span class="right"></span> </a>
+                                            </li>
+                                            <li class="">
+                                                <a title="Português" href="#pt" style="border-radius:0 !important;" rel="nofollow" onclick="unshowPage('');window.location=window.location.href.replace('/es/', '/pt/').replace('/?lang=es', '')">
+                                                    <div class="sprite-icons-br"></div><span class="right"></span> </a>
+                                            </li>
+                                            <li class="">
+                                                <a title="French" href="#fr" style="border-radius:0 !important;" rel="nofollow" onclick="unshowPage('');window.location=window.location.href.replace('/es/', '/fr/').replace('/?lang=es', '')">
+                                                    <div class="sprite-icons-fr"></div><span class="right"></span> </a>
+                                            </li>
+                                            <li class="">
+                                                <a title="German" href="#de" style="border-radius:0 !important;" rel="nofollow" onclick="unshowPage('');window.location=window.location.href.replace('/es/', '/de/').replace('/?lang=es', '')">
+                                                    <div class="sprite-icons-de"></div><span class="right"></span> </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header><!-- MIDDLE AREA -->
+<div class="top-area show-onload">
+    <div class="bg-holder full">                                
+        <div class="bg-content">
+            <div class="container pl1porc pr1porc" style="margin-top: 5px;">                                                                       
+                <div class="row wizard" >
+                    <div class="col-xs-3 wizard-item-inactive" style="border-left: 1px solid #ddd;">
+                        <div class="col-xs-2 hidden-xs hidden-sm">
+                            <img class="sprite-icons-num1bla" style="margin-left: 5px; margin-right: 5px;">
+                        </div>
+                        <div class="col-xs-6 col-sm-10 col-md-8 hidden-xs hidden-sm">
+                            <h3>Servicios</h3>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2">
+                            <i class="fa fa-bus fa-2x"></i>
+                        </div>                    
+                    </div>                
+                    <div class="col-xs-3 wizard-item-inactive">                    
+                        <div class="col-xs-2 hidden-xs hidden-sm">
+                            <img class="sprite-icons-num2bla" style="margin-left: 5px; margin-right: 5px;">
+                        </div>
+                        <div class="col-xs-6 col-sm-8 col-md-8 hidden-xs hidden-sm">
+                            <h3>Asientos</h3>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2">
+                            <img src="https://www.urubus.com.uy/images/seats-icon48bla.png" style="margin-left: 10px; margin-right: 5px;">
+                        </div>                        
+                    </div>
+                    <a href="">
+                        <div class="col-xs-3 wizard-item-active">                                        
+                            <div class="col-xs-2 hidden-xs hidden-sm">
+                                <img class="sprite-icons-num3cel" style="margin-left: 5px; margin-right: 5px;">
+                            </div>
+                            <div class="col-xs-6 col-sm-8 col-md-8 hidden-xs hidden-sm">
+                                <h3>Pasajeros</h3>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-2">
+                                <i class="fa fa-users fa-2x" style="margin-left: 10px;max-height:54px;"></i>
+                            </div>                     
+                        </div>
+                    </a>    
+                    <div class="col-xs-3 wizard-item-inactive">
+                        <div class="col-xs-1 wizard-separator">                        
+                        </div>
+                        <div class="col-xs-9 col-sm-10 col-md-11">
+                            <div class="col-xs-2 hidden-xs hidden-sm">
+                                <img class="sprite-icons-num4bla" style="margin-left: 5px; margin-right: 5px;">
+                            </div>
+                            <div class="col-xs-6 col-sm-7 col-md-8 hidden-xs hidden-sm">
+                                <h3>Pago</h3>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-2">
+                                <i class="fa fa-credit-card-alt  fa-2x"></i>
+                            </div>  
+                        </div>
+                    </div>
+                </div>    
+
+                <div class="row ml0 mr0">     
+                <form name="form" lang="es"  data-toggle="validator" id="form"  method="POST">    
+                    <div class="col-sm-7 col-md-9">                    
+                        <!-- desktop/tablet -->
+                        <div class="headertickepasag">
+                            <h3 class="booking-title-painted hidden-xs " >&nbsp;Ida&nbsp;</h3>
+                            <h3 class="booking-title-painted hidden-xs hidden">&nbsp;Vuelta&nbsp;</h3>
+                            <h3 class="booking-title hidden-xs" style="display:inline;">Detalle de Pasajeros</h3>   
+                            <!-- smartphone -->
+                            <h4 class="booking-title-painted hidden-sm hidden-md hidden-lg ">&nbsp;Ida&nbsp;</h4>
+                            <h4 class="booking-title-painted hidden-sm hidden-md hidden-lg hidden" style="display: ">&nbsp;Vuelta&nbsp;</h4>
+                            <h3 class="hidden-sm hidden-md hidden-lg" style="display:inline;">Pasajeros</h3>
+                        </div>
+                        
+                    
+                        <input type="hidden" name="seat_count" id="seat_count" value="8" >
+                        <ul class="list booking-item-passengers">
+                            <li class="">
+	<div class="row ml0 mr0">		                                                                                                        
+		<div class="col-xs-12 col-sm-12 col-md-12 mb10 ml0 pl0">
+			<img class="small_seat" src="https://www.urubus.com.uy/es/img/seats-icon48bla.png">
+			<label class="inline bold" >Asiento 19</label>
+            <span style="color:red; float:right; font-weight: bold;">* Obligatorio</span>
+		</div>                                                                                                             
+	</div>
+	<div class="row ml0 mr0">                                                                       
+		<div class="col-xs-6 col-sm-5 col-md-2 passenger">
+			<div class="form-group has-feedback">
+				<label>Nombre <span style="color:red">*</span></label>
+				<input class="form-control has-feedback-no-icon" type="text" name="passname_1" id="passname_1" value="" placeholder="José Gervasio" required pattern="^[_A-z 'ñáéíóúàèùâêîôûëïçÇãõ]{1,}$" maxlength="30" data-error="Nombre inválido"  />
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>
+			</div>
+		</div>
+		<div class="col-xs-6 col-sm-7 col-md-2 passenger">
+			<div class="form-group has-feedback">
+				<label>Apellido <span style="color:red">*</span></label>
+				<input class="form-control has-feedback-no-icon" type="text" name="passlastname_1" id="passlastname_1" value=""  placeholder="Artigas" required pattern="^[_A-z 'ñáéíóúàèùâêîôûëïçÇãõ]{1,}$" maxlength="50" data-error="Apellido inválido"/>
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>
+			</div>
+		</div>                                    
+		<div class="col-xs-12 col-sm-6 col-md-3 passenger">
+			<div class="col-md3 form-group has-feedback">
+				<input type="radio" id="doc_type_1" onclick="Document(1)"  name="doc_type_1" checked value="1" class="inline"><label> CI UY </label>                                             
+				<input type="radio" id="doc_type_1" onclick="Passport(2)"  name="doc_type_1" value="2" class="inline"><label> Pasaporte / Otro <span style="color:red">*</span></label>                                            
+				<input class="form-control has-feedback-no-icon text-uc" type="text" name="doc_1" id="doc_1" value="" placeholder="12345678" required data-error="Documento inválido" pattern="[A-Za-z0-9]+" data-gtm-form-interact-field-id="0" oninput="this.value = this.value.replace(/[^A-Za-z0-9]/g,'').toUpperCase();" >
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-2 passenger">
+			<div class="col-md3 form-group has-feedback">
+				<label>Celular <span style="color:red">*</span></label>
+				<input class="form-control has-feedback-no-icon" type="tel" min="21000000" name="phone_1" id="phone_1" value="" placeholder="00598 XXXXXXXX" required pattern="^[+0-9]{1,}$" data-error="Número inválido" oninput="this.value = this.value.replace(/[^0-9.+]/g, '').replace(/(\..*)\./g, '$1');" >
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-8 col-md-3 passenger">
+			<div class="form-group has-feedback">
+				<label>Correo electrónico <span style="color:red">*</span></label>
+				<input class=" form-control has-feedback-no-icon" type="email"  name="email_1" id="email_1" value="" placeholder="jose_gervasio@artigas.com.uy" required pattern="^(?!.*\.@)[^@\s]+@[^@\s]+\.[^@\s]+$"  data-error="Correo electrónico inválido"/>
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>                                           
+			</div>
+		</div>                                    
+	</div>
+        </li>
+    </ul>
+
+    <div class="row ml0 mr0" id="show-passengers-container" style="margin-top: 10px; margin-bottom: 10px;">
+        <div class="col-xs-12">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" id="chk-show-passengers"> ¿Ingresar datos de los demás pasajeros?
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <ul class="list booking-item-passengers" id="extra-passengers-list" style="display:none;">
+        <li class="">
+	<div class="row ml0 mr0">		                                                                                                        
+		<div class="col-xs-12 col-sm-12 col-md-12 mb10 ml0 pl0">
+			<img class="small_seat" src="https://www.urubus.com.uy/es/img/seats-icon48bla.png">
+			<label class="inline bold" >Asiento 22</label>
+		</div>                                                                                                             
+	</div>
+	<div class="row ml0 mr0">                                                                       
+		<div class="col-xs-6 col-sm-5 col-md-2 passenger">
+			<div class="form-group has-feedback">
+				<label>Nombre</label>
+				<input class="form-control has-feedback-no-icon" type="text" name="passname_2" id="passname_2" value="" placeholder="José Gervasio"  pattern="^[_A-z 'ñáéíóúàèùâêîôûëïçÇãõ]{1,}$" maxlength="30" data-error="Nombre inválido"  />
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>
+			</div>
+		</div>
+		<div class="col-xs-6 col-sm-7 col-md-2 passenger">
+			<div class="form-group has-feedback">
+				<label>Apellido</label>
+				<input class="form-control has-feedback-no-icon" type="text" name="passlastname_2" id="passlastname_2" value=""  placeholder="Artigas"  pattern="^[_A-z 'ñáéíóúàèùâêîôûëïçÇãõ]{1,}$" maxlength="50" data-error="Apellido inválido"/>
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>
+			</div>
+		</div>                                    
+		<div class="col-xs-12 col-sm-6 col-md-3 passenger">
+			<div class="col-md3 form-group has-feedback">
+				<input type="radio" id="doc_type_2" onclick="Document(1)"  name="doc_type_2" checked value="1" class="inline"><label> CI UY </label>                                             
+				<input type="radio" id="doc_type_2" onclick="Passport(2)"  name="doc_type_2" value="2" class="inline"><label> Pasaporte / Otro</label>                                            
+				<input class="form-control has-feedback-no-icon text-uc" type="text" name="doc_2" id="doc_2" value="" placeholder="12345678"  data-error="Documento inválido" pattern="[A-Za-z0-9]+" data-gtm-form-interact-field-id="0" oninput="this.value = this.value.replace(/[^A-Za-z0-9]/g,'').toUpperCase();" >
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-2 passenger">
+			<div class="col-md3 form-group has-feedback">
+				<label>Celular</label>
+				<input class="form-control has-feedback-no-icon" type="tel" min="21000000" name="phone_2" id="phone_2" value="" placeholder="00598 XXXXXXXX"  pattern="^[+0-9]{1,}$" data-error="Número inválido" oninput="this.value = this.value.replace(/[^0-9.+]/g, '').replace(/(\..*)\./g, '$1');" >
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-8 col-md-3 passenger">
+			<div class="form-group has-feedback">
+				<label>Correo electrónico</label>
+				<input class=" form-control has-feedback-no-icon" type="email"  name="email_2" id="email_2" value="" placeholder="jose_gervasio@artigas.com.uy"  pattern="^(?!.*\.@)[^@\s]+@[^@\s]+\.[^@\s]+$"  data-error="Correo electrónico inválido"/>
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>                                           
+			</div>
+		</div>                                    
+	</div>
+        </li><li class="">
+	<div class="row ml0 mr0">		                                                                                                        
+		<div class="col-xs-12 col-sm-12 col-md-12 mb10 ml0 pl0">
+			<img class="small_seat" src="https://www.urubus.com.uy/es/img/seats-icon48bla.png">
+			<label class="inline bold" >Asiento 31</label>
+		</div>                                                                                                             
+	</div>
+	<div class="row ml0 mr0">                                                                       
+		<div class="col-xs-6 col-sm-5 col-md-2 passenger">
+			<div class="form-group has-feedback">
+				<label>Nombre</label>
+				<input class="form-control has-feedback-no-icon" type="text" name="passname_3" id="passname_3" value="" placeholder="José Gervasio"  pattern="^[_A-z 'ñáéíóúàèùâêîôûëïçÇãõ]{1,}$" maxlength="30" data-error="Nombre inválido"  />
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>
+			</div>
+		</div>
+		<div class="col-xs-6 col-sm-7 col-md-2 passenger">
+			<div class="form-group has-feedback">
+				<label>Apellido</label>
+				<input class="form-control has-feedback-no-icon" type="text" name="passlastname_3" id="passlastname_3" value=""  placeholder="Artigas"  pattern="^[_A-z 'ñáéíóúàèùâêîôûëïçÇãõ]{1,}$" maxlength="50" data-error="Apellido inválido"/>
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>
+			</div>
+		</div>                                    
+		<div class="col-xs-12 col-sm-6 col-md-3 passenger">
+			<div class="col-md3 form-group has-feedback">
+				<input type="radio" id="doc_type_3" onclick="Document(1)"  name="doc_type_3" checked value="1" class="inline"><label> CI UY </label>                                             
+				<input type="radio" id="doc_type_3" onclick="Passport(2)"  name="doc_type_3" value="2" class="inline"><label> Pasaporte / Otro</label>                                            
+				<input class="form-control has-feedback-no-icon text-uc" type="text" name="doc_3" id="doc_3" value="" placeholder="12345678"  data-error="Documento inválido" pattern="[A-Za-z0-9]+" data-gtm-form-interact-field-id="0" oninput="this.value = this.value.replace(/[^A-Za-z0-9]/g,'').toUpperCase();" >
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-2 passenger">
+			<div class="col-md3 form-group has-feedback">
+				<label>Celular</label>
+				<input class="form-control has-feedback-no-icon" type="tel" min="21000000" name="phone_3" id="phone_3" value="" placeholder="00598 XXXXXXXX"  pattern="^[+0-9]{1,}$" data-error="Número inválido" oninput="this.value = this.value.replace(/[^0-9.+]/g, '').replace(/(\..*)\./g, '$1');" >
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-8 col-md-3 passenger">
+			<div class="form-group has-feedback">
+				<label>Correo electrónico</label>
+				<input class=" form-control has-feedback-no-icon" type="email"  name="email_3" id="email_3" value="" placeholder="jose_gervasio@artigas.com.uy"  pattern="^(?!.*\.@)[^@\s]+@[^@\s]+\.[^@\s]+$"  data-error="Correo electrónico inválido"/>
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>                                           
+			</div>
+		</div>                                    
+	</div>
+        </li><li class="">
+	<div class="row ml0 mr0">		                                                                                                        
+		<div class="col-xs-12 col-sm-12 col-md-12 mb10 ml0 pl0">
+			<img class="small_seat" src="https://www.urubus.com.uy/es/img/seats-icon48bla.png">
+			<label class="inline bold" >Asiento 35</label>
+		</div>                                                                                                             
+	</div>
+	<div class="row ml0 mr0">                                                                       
+		<div class="col-xs-6 col-sm-5 col-md-2 passenger">
+			<div class="form-group has-feedback">
+				<label>Nombre</label>
+				<input class="form-control has-feedback-no-icon" type="text" name="passname_4" id="passname_4" value="" placeholder="José Gervasio"  pattern="^[_A-z 'ñáéíóúàèùâêîôûëïçÇãõ]{1,}$" maxlength="30" data-error="Nombre inválido"  />
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>
+			</div>
+		</div>
+		<div class="col-xs-6 col-sm-7 col-md-2 passenger">
+			<div class="form-group has-feedback">
+				<label>Apellido</label>
+				<input class="form-control has-feedback-no-icon" type="text" name="passlastname_4" id="passlastname_4" value=""  placeholder="Artigas"  pattern="^[_A-z 'ñáéíóúàèùâêîôûëïçÇãõ]{1,}$" maxlength="50" data-error="Apellido inválido"/>
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>
+			</div>
+		</div>                                    
+		<div class="col-xs-12 col-sm-6 col-md-3 passenger">
+			<div class="col-md3 form-group has-feedback">
+				<input type="radio" id="doc_type_4" onclick="Document(1)"  name="doc_type_4" checked value="1" class="inline"><label> CI UY </label>                                             
+				<input type="radio" id="doc_type_4" onclick="Passport(2)"  name="doc_type_4" value="2" class="inline"><label> Pasaporte / Otro</label>                                            
+				<input class="form-control has-feedback-no-icon text-uc" type="text" name="doc_4" id="doc_4" value="" placeholder="12345678"  data-error="Documento inválido" pattern="[A-Za-z0-9]+" data-gtm-form-interact-field-id="0" oninput="this.value = this.value.replace(/[^A-Za-z0-9]/g,'').toUpperCase();" >
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-2 passenger">
+			<div class="col-md3 form-group has-feedback">
+				<label>Celular</label>
+				<input class="form-control has-feedback-no-icon" type="tel" min="21000000" name="phone_4" id="phone_4" value="" placeholder="00598 XXXXXXXX"  pattern="^[+0-9]{1,}$" data-error="Número inválido" oninput="this.value = this.value.replace(/[^0-9.+]/g, '').replace(/(\..*)\./g, '$1');" >
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-8 col-md-3 passenger">
+			<div class="form-group has-feedback">
+				<label>Correo electrónico</label>
+				<input class=" form-control has-feedback-no-icon" type="email"  name="email_4" id="email_4" value="" placeholder="jose_gervasio@artigas.com.uy"  pattern="^(?!.*\.@)[^@\s]+@[^@\s]+\.[^@\s]+$"  data-error="Correo electrónico inválido"/>
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>                                           
+			</div>
+		</div>                                    
+	</div>
+        </li><li class="">
+	<div class="row ml0 mr0">		                                                                                                        
+		<div class="col-xs-12 col-sm-12 col-md-12 mb10 ml0 pl0">
+			<img class="small_seat" src="https://www.urubus.com.uy/es/img/seats-icon48bla.png">
+			<label class="inline bold" >Asiento 36</label>
+		</div>                                                                                                             
+	</div>
+	<div class="row ml0 mr0">                                                                       
+		<div class="col-xs-6 col-sm-5 col-md-2 passenger">
+			<div class="form-group has-feedback">
+				<label>Nombre</label>
+				<input class="form-control has-feedback-no-icon" type="text" name="passname_5" id="passname_5" value="" placeholder="José Gervasio"  pattern="^[_A-z 'ñáéíóúàèùâêîôûëïçÇãõ]{1,}$" maxlength="30" data-error="Nombre inválido"  />
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>
+			</div>
+		</div>
+		<div class="col-xs-6 col-sm-7 col-md-2 passenger">
+			<div class="form-group has-feedback">
+				<label>Apellido</label>
+				<input class="form-control has-feedback-no-icon" type="text" name="passlastname_5" id="passlastname_5" value=""  placeholder="Artigas"  pattern="^[_A-z 'ñáéíóúàèùâêîôûëïçÇãõ]{1,}$" maxlength="50" data-error="Apellido inválido"/>
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>
+			</div>
+		</div>                                    
+		<div class="col-xs-12 col-sm-6 col-md-3 passenger">
+			<div class="col-md3 form-group has-feedback">
+				<input type="radio" id="doc_type_5" onclick="Document(1)"  name="doc_type_5" checked value="1" class="inline"><label> CI UY </label>                                             
+				<input type="radio" id="doc_type_5" onclick="Passport(2)"  name="doc_type_5" value="2" class="inline"><label> Pasaporte / Otro</label>                                            
+				<input class="form-control has-feedback-no-icon text-uc" type="text" name="doc_5" id="doc_5" value="" placeholder="12345678"  data-error="Documento inválido" pattern="[A-Za-z0-9]+" data-gtm-form-interact-field-id="0" oninput="this.value = this.value.replace(/[^A-Za-z0-9]/g,'').toUpperCase();" >
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-2 passenger">
+			<div class="col-md3 form-group has-feedback">
+				<label>Celular</label>
+				<input class="form-control has-feedback-no-icon" type="tel" min="21000000" name="phone_5" id="phone_5" value="" placeholder="00598 XXXXXXXX"  pattern="^[+0-9]{1,}$" data-error="Número inválido" oninput="this.value = this.value.replace(/[^0-9.+]/g, '').replace(/(\..*)\./g, '$1');" >
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-8 col-md-3 passenger">
+			<div class="form-group has-feedback">
+				<label>Correo electrónico</label>
+				<input class=" form-control has-feedback-no-icon" type="email"  name="email_5" id="email_5" value="" placeholder="jose_gervasio@artigas.com.uy"  pattern="^(?!.*\.@)[^@\s]+@[^@\s]+\.[^@\s]+$"  data-error="Correo electrónico inválido"/>
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>                                           
+			</div>
+		</div>                                    
+	</div>
+        </li><li class="">
+	<div class="row ml0 mr0">		                                                                                                        
+		<div class="col-xs-12 col-sm-12 col-md-12 mb10 ml0 pl0">
+			<img class="small_seat" src="https://www.urubus.com.uy/es/img/seats-icon48bla.png">
+			<label class="inline bold" >Asiento 38</label>
+		</div>                                                                                                             
+	</div>
+	<div class="row ml0 mr0">                                                                       
+		<div class="col-xs-6 col-sm-5 col-md-2 passenger">
+			<div class="form-group has-feedback">
+				<label>Nombre</label>
+				<input class="form-control has-feedback-no-icon" type="text" name="passname_6" id="passname_6" value="" placeholder="José Gervasio"  pattern="^[_A-z 'ñáéíóúàèùâêîôûëïçÇãõ]{1,}$" maxlength="30" data-error="Nombre inválido"  />
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>
+			</div>
+		</div>
+		<div class="col-xs-6 col-sm-7 col-md-2 passenger">
+			<div class="form-group has-feedback">
+				<label>Apellido</label>
+				<input class="form-control has-feedback-no-icon" type="text" name="passlastname_6" id="passlastname_6" value=""  placeholder="Artigas"  pattern="^[_A-z 'ñáéíóúàèùâêîôûëïçÇãõ]{1,}$" maxlength="50" data-error="Apellido inválido"/>
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>
+			</div>
+		</div>                                    
+		<div class="col-xs-12 col-sm-6 col-md-3 passenger">
+			<div class="col-md3 form-group has-feedback">
+				<input type="radio" id="doc_type_6" onclick="Document(1)"  name="doc_type_6" checked value="1" class="inline"><label> CI UY </label>                                             
+				<input type="radio" id="doc_type_6" onclick="Passport(2)"  name="doc_type_6" value="2" class="inline"><label> Pasaporte / Otro</label>                                            
+				<input class="form-control has-feedback-no-icon text-uc" type="text" name="doc_6" id="doc_6" value="" placeholder="12345678"  data-error="Documento inválido" pattern="[A-Za-z0-9]+" data-gtm-form-interact-field-id="0" oninput="this.value = this.value.replace(/[^A-Za-z0-9]/g,'').toUpperCase();" >
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-2 passenger">
+			<div class="col-md3 form-group has-feedback">
+				<label>Celular</label>
+				<input class="form-control has-feedback-no-icon" type="tel" min="21000000" name="phone_6" id="phone_6" value="" placeholder="00598 XXXXXXXX"  pattern="^[+0-9]{1,}$" data-error="Número inválido" oninput="this.value = this.value.replace(/[^0-9.+]/g, '').replace(/(\..*)\./g, '$1');" >
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-8 col-md-3 passenger">
+			<div class="form-group has-feedback">
+				<label>Correo electrónico</label>
+				<input class=" form-control has-feedback-no-icon" type="email"  name="email_6" id="email_6" value="" placeholder="jose_gervasio@artigas.com.uy"  pattern="^(?!.*\.@)[^@\s]+@[^@\s]+\.[^@\s]+$"  data-error="Correo electrónico inválido"/>
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>                                           
+			</div>
+		</div>                                    
+	</div>
+        </li><li class="">
+	<div class="row ml0 mr0">		                                                                                                        
+		<div class="col-xs-12 col-sm-12 col-md-12 mb10 ml0 pl0">
+			<img class="small_seat" src="https://www.urubus.com.uy/es/img/seats-icon48bla.png">
+			<label class="inline bold" >Asiento 39</label>
+		</div>                                                                                                             
+	</div>
+	<div class="row ml0 mr0">                                                                       
+		<div class="col-xs-6 col-sm-5 col-md-2 passenger">
+			<div class="form-group has-feedback">
+				<label>Nombre</label>
+				<input class="form-control has-feedback-no-icon" type="text" name="passname_7" id="passname_7" value="" placeholder="José Gervasio"  pattern="^[_A-z 'ñáéíóúàèùâêîôûëïçÇãõ]{1,}$" maxlength="30" data-error="Nombre inválido"  />
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>
+			</div>
+		</div>
+		<div class="col-xs-6 col-sm-7 col-md-2 passenger">
+			<div class="form-group has-feedback">
+				<label>Apellido</label>
+				<input class="form-control has-feedback-no-icon" type="text" name="passlastname_7" id="passlastname_7" value=""  placeholder="Artigas"  pattern="^[_A-z 'ñáéíóúàèùâêîôûëïçÇãõ]{1,}$" maxlength="50" data-error="Apellido inválido"/>
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>
+			</div>
+		</div>                                    
+		<div class="col-xs-12 col-sm-6 col-md-3 passenger">
+			<div class="col-md3 form-group has-feedback">
+				<input type="radio" id="doc_type_7" onclick="Document(1)"  name="doc_type_7" checked value="1" class="inline"><label> CI UY </label>                                             
+				<input type="radio" id="doc_type_7" onclick="Passport(2)"  name="doc_type_7" value="2" class="inline"><label> Pasaporte / Otro</label>                                            
+				<input class="form-control has-feedback-no-icon text-uc" type="text" name="doc_7" id="doc_7" value="" placeholder="12345678"  data-error="Documento inválido" pattern="[A-Za-z0-9]+" data-gtm-form-interact-field-id="0" oninput="this.value = this.value.replace(/[^A-Za-z0-9]/g,'').toUpperCase();" >
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-2 passenger">
+			<div class="col-md3 form-group has-feedback">
+				<label>Celular</label>
+				<input class="form-control has-feedback-no-icon" type="tel" min="21000000" name="phone_7" id="phone_7" value="" placeholder="00598 XXXXXXXX"  pattern="^[+0-9]{1,}$" data-error="Número inválido" oninput="this.value = this.value.replace(/[^0-9.+]/g, '').replace(/(\..*)\./g, '$1');" >
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-8 col-md-3 passenger">
+			<div class="form-group has-feedback">
+				<label>Correo electrónico</label>
+				<input class=" form-control has-feedback-no-icon" type="email"  name="email_7" id="email_7" value="" placeholder="jose_gervasio@artigas.com.uy"  pattern="^(?!.*\.@)[^@\s]+@[^@\s]+\.[^@\s]+$"  data-error="Correo electrónico inválido"/>
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>                                           
+			</div>
+		</div>                                    
+	</div>
+        </li><li class="">
+	<div class="row ml0 mr0">		                                                                                                        
+		<div class="col-xs-12 col-sm-12 col-md-12 mb10 ml0 pl0">
+			<img class="small_seat" src="https://www.urubus.com.uy/es/img/seats-icon48bla.png">
+			<label class="inline bold" >Asiento 43</label>
+		</div>                                                                                                             
+	</div>
+	<div class="row ml0 mr0">                                                                       
+		<div class="col-xs-6 col-sm-5 col-md-2 passenger">
+			<div class="form-group has-feedback">
+				<label>Nombre</label>
+				<input class="form-control has-feedback-no-icon" type="text" name="passname_8" id="passname_8" value="" placeholder="José Gervasio"  pattern="^[_A-z 'ñáéíóúàèùâêîôûëïçÇãõ]{1,}$" maxlength="30" data-error="Nombre inválido"  />
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>
+			</div>
+		</div>
+		<div class="col-xs-6 col-sm-7 col-md-2 passenger">
+			<div class="form-group has-feedback">
+				<label>Apellido</label>
+				<input class="form-control has-feedback-no-icon" type="text" name="passlastname_8" id="passlastname_8" value=""  placeholder="Artigas"  pattern="^[_A-z 'ñáéíóúàèùâêîôûëïçÇãõ]{1,}$" maxlength="50" data-error="Apellido inválido"/>
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>
+			</div>
+		</div>                                    
+		<div class="col-xs-12 col-sm-6 col-md-3 passenger">
+			<div class="col-md3 form-group has-feedback">
+				<input type="radio" id="doc_type_8" onclick="Document(1)"  name="doc_type_8" checked value="1" class="inline"><label> CI UY </label>                                             
+				<input type="radio" id="doc_type_8" onclick="Passport(2)"  name="doc_type_8" value="2" class="inline"><label> Pasaporte / Otro</label>                                            
+				<input class="form-control has-feedback-no-icon text-uc" type="text" name="doc_8" id="doc_8" value="" placeholder="12345678"  data-error="Documento inválido" pattern="[A-Za-z0-9]+" data-gtm-form-interact-field-id="0" oninput="this.value = this.value.replace(/[^A-Za-z0-9]/g,'').toUpperCase();" >
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-2 passenger">
+			<div class="col-md3 form-group has-feedback">
+				<label>Celular</label>
+				<input class="form-control has-feedback-no-icon" type="tel" min="21000000" name="phone_8" id="phone_8" value="" placeholder="00598 XXXXXXXX"  pattern="^[+0-9]{1,}$" data-error="Número inválido" oninput="this.value = this.value.replace(/[^0-9.+]/g, '').replace(/(\..*)\./g, '$1');" >
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-8 col-md-3 passenger">
+			<div class="form-group has-feedback">
+				<label>Correo electrónico</label>
+				<input class=" form-control has-feedback-no-icon" type="email"  name="email_8" id="email_8" value="" placeholder="jose_gervasio@artigas.com.uy"  pattern="^(?!.*\.@)[^@\s]+@[^@\s]+\.[^@\s]+$"  data-error="Correo electrónico inválido"/>
+				<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+				<div class="help-block with-errors "></div>                                           
+			</div>
+		</div>                                    
+	</div>
+        </li>                                                       
+                            <li class="hidden">                                
+                                <div class="row ml0 mr0">
+                                    <input type="hidden" name="seatno_0" id="seatno_0" value="01">                                    
+                                    <div class="col-xs-6 col-sm-4 col-md-2 passenger">
+                                        <div class="form-group has-feedback">
+                                            <label>Nombre</label>
+                                            <input class="form-control" type="text" name="passname_0" id="passname_0" value="" placeholder="José Gervasio" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3 passenger">
+                                        <div class="form-group has-feedback">
+                                            <label>Apellido</label>
+                                            <input class="form-control" type="text" name="passlastname_0" id="passlastname_0" value=""  placeholder="Artigas" />
+                                        </div>
+                                    </div>
+                                    
+                                                                        
+                                </div>
+                                <div class="row  ml10 mr10">
+                                    <div class="col-xs-6 col-sm-3 col-md-3 col-md-3 passenger">
+                                        <div class="form-group">
+                                            <label>Tipo</label>
+                                            <select class="form-control" name="doc_type_0" id="doc_type_0" value="">
+                                                <option value="1" selected>CI UY</option>
+                                                <option value="2">Pasaporte / Otro</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-2 col-md-3 col-md-3 passenger">
+                                        <div class="form-group">
+                                            <label>País</label>
+                                            <input class="form-control" type="text" name="country_0" id="country_0" value="" placeholder="Uruguay"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3 col-md-3 passenger">
+                                        <div class="form-group">
+                                            <label>Documento</label>
+                                            <input class="form-control" type="text" name="doc_0" id="doc_0" value="" placeholder="12345678" pattern="[^-,.]+" title="'-' is not allowed"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4 col-md-3 passenger">
+                                        <div class="form-group">
+                                            <label>Expira</label>
+                                            <input class="form-control pl5 pr0" type="date" name="exp_date_0" id="exp_date_0" value="" placeholder="16/07/1950"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        <script>
+                            (function() {
+                                var chk = document.getElementById('chk-show-passengers');
+                                var extraList = document.getElementById('extra-passengers-list');
+
+                                if (chk && extraList) {
+                                    chk.addEventListener('change', function() {
+                                        extraList.style.display = chk.checked ? 'block' : 'none';
+                                    });
+                                }
+                            })();
+                        </script>
+                        
+                        <div class="gap gap-small"></div>                    
+                    </div>
+                
+                    <div class="col-xs-12 col-sm-5 col-md-3">                    
+                        <ul class="list booking-item-seats">
+                            <li style="border-top:0px;">
+                                <div class="row">                                
+                                    <div class="col-md-12">
+                                        <div class="form-group mb0" style="text-align:center;">                                                                                                                            
+                                            <button type="submit" name="passengers_continue" id="passengers_continue" class="btn button-glossy green button_next" onclick="gtag('send', 'event', 'eCommerce', 'passengersGoSelected', 'COLONIA - MONTEVIDEO (Todas) - COT - 19,22,31,35,36,38,39,43');"  >Continuar</button>
+                                        </div>
+                                    </div>                                                                
+                                </div>                            
+                            </li>  
+                            <li style="border-top:0px;">
+                                <div class="booking-item-payment" style="border-radius: 14px !important;">
+                                    <header class="clearfix">
+                                        <h5 class="mb0 mt0" style="text-transform: uppercase;">Resumen</h5>                            
+                                    </header>
+                                    <ul class="booking-item-payment-details">
+                                        <li>
+                                            <h5 class="mt0 bold">Ida</h5>
+            <!--                                <img src="images/.png" class="small_logo_sp_img" alt="COT" title="COT" />-->
+                                            <div class="booking-item-payment-flight">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="booking-item-flight-details">
+                                                            <div class="booking-item-departure">
+                                                                <img  class="result_img" src="https://www.urubus.com.uy/images/bus_salida.png" alt="Image Alternative text" title="Image Title" />
+                                                                <h5>17:30</h5>
+                                                                <p class="booking-item-date">Sábado 06/12/2025</p>
+                                                                <p class="booking-item-destination">COLONIA</p>
+                                                            </div>
+                                                            <div class="booking-item-arrival">
+                                                                <img  class="result_img" src="https://www.urubus.com.uy/es/images/bus_llegada.png" alt="Image Alternative text" title="Image Title" />
+                                                                <h5>20:25</h5>
+                                                                <p class="booking-item-date">Sábado 06/12/2025</p>
+                                                                <p class="booking-item-destination">MONTEVIDEO (Todas)</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>                                        
+                                                </div>
+                                                <ul class="booking-item-payment-price">
+                                                    <li>
+                                                        <p class="booking-item-payment-price-title">Empresa:</p>
+                                                        <p class="booking-item-payment-price-amount">COT</p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="booking-item-payment-price-title">Coche:</p>
+                                                        <p class="booking-item-payment-price-amount">1<small></small></p>
+                                                    </li>
+                                                    <li class="hidden">
+                                                        <p class="booking-item-payment-price-title">Se Anuncia:</p>
+                                                        <p class="booking-item-payment-price-amount">__TRIP_ANNOUNCE_GO__ __TRIP_BUS_TYPE_GO__<small></small></p>
+                                                    </li>
+                                                    <li class="hidden">
+                                                        <p class="booking-item-payment-price-title">Comodidad:</p>
+                                                        <p class="booking-item-payment-price-amount">__TRIP_COMFORT_GO__</p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="booking-item-payment-price-title">Duración:</p>
+                                                        <p class="booking-item-payment-price-amount"> 2h 55m</p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="booking-item-payment-price-title">Asientos:</p>
+                                                        <p class="booking-item-payment-price-amount">19,22,31,35,36,38,39,43</p>
+                                                    </li>
+                                                </ul>
+                                                <p class="mb0"> </p>                                                     
+                                                <p class="mb0"> </p>
+                                                <p class="mb0" style="display:inline;"> </p>
+
+                                            </div>
+                                        </li>
+                                        <li>                                            
+                                            <ul class="booking-item-payment-price">
+                                                <li>
+                                                    <p class="booking-item-payment-price-title">Precio</p>
+                                                    <p class="booking-item-payment-price-amount">$567<small>/Pasajero</small>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="booking-item-payment-price-title">Tasa de Embarque</p>
+                                                    <p class="booking-item-payment-price-amount" id="boarding_tax_amt_go">$0<small>/Pasajero</small>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="booking-item-payment-details hidden">
+                                        <li>
+                                            <h5 class="mt0 bold">Vuelta</h5>
+            <!--                                <img src="images/.png" class="small_logo_sp_img" alt="" title="" />-->
+                                            <div class="booking-item-payment-flight">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="booking-item-flight-details">
+                                                            <div class="booking-item-departure">
+                                                                <img  class="result_img" src="https://www.urubus.com.uy/images/bus_salida.png" alt="Image Alternative text" title="Image Title" />
+                                                                <h5></h5>
+                                                                <p class="booking-item-date"></p>
+                                                                <p class="booking-item-destination">MONTEVIDEO (Todas)</p>
+                                                            </div>
+                                                            <div class="booking-item-arrival">
+                                                                <img  class="result_img" src="https://www.urubus.com.uy/images/bus_llegada.png" alt="Image Alternative text" title="Image Title" />
+                                                                <h5></h5>
+                                                                <p class="booking-item-date"></p>
+                                                                <p class="booking-item-destination">COLONIA</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>                                        
+                                                </div>
+                                                <ul class="booking-item-payment-price">
+                                                    <li>
+                                                        <p class="booking-item-payment-price-title">Empresa:</p>
+                                                        <p class="booking-item-payment-price-amount"></p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="booking-item-payment-price-title">Coche:</p>
+                                                        <p class="booking-item-payment-price-amount"><small></small></p>
+                                                    </li>
+                                                    <li class="hidden">
+                                                        <p class="booking-item-payment-price-title">Se Anuncia:</p>
+                                                        <p class="booking-item-payment-price-amount"> <small></small></p>
+                                                    </li>
+                                                    <li class="hidden">
+                                                        <p class="booking-item-payment-price-title">Comodidad:</p>
+                                                        <p class="booking-item-payment-price-amount"></p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="booking-item-payment-price-title">Duración:</p>
+                                                        <p class="booking-item-payment-price-amount"></p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="booking-item-payment-price-title">Asientos:</p>
+                                                        <p class="booking-item-payment-price-amount" id="total_seats"></p>
+                                                    </li>
+                                                </ul>
+                                                <p class="mb0"> </p>                                                     
+                                                <p class="mb0"> </p>
+                                                <p class="mb0" style="display:inline;"> </p>
+
+                                            </div>
+                                        </li>
+                                        <li>                                            
+                                            <ul class="booking-item-payment-price">
+                                                <li>
+                                                    <p class="booking-item-payment-price-title">Precio</p>
+                                                    <p class="booking-item-payment-price-amount">$<small>/Pasajero</small>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p class="booking-item-payment-price-title">Tasa de Embarque</p>                                                                                                        
+                                                    <small class="booking-item-payment-price-amount">/Pasajero</small> 
+                                                    <p class="booking-item-payment-price-amount" id="boarding_tax_amt_go"></p>
+                                                    <p class="booking-item-payment-price-amount" >$</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <p class="booking-item-payment-total pr0" style="display:inline;">Precio Total: <span style="display:inline;">$</span></p>
+                                    <h5  id="total_amt" style="display:inline; font-size:24px; font-weight:bold;">4536</h5>                                                            
+                                </div>
+                            </li>
+                            <li style="border-top:0px;">
+                                <a class="btn btn-danger small button_back" href="https://www.urubus.com.uy/cancelar-compra?e_i=CANCEL&e_d=Asientos Cancelados&fatal=1" id="btn_back" name="btn_back" style="color:white;opacity: .7;">Atrás - Si desea cancelar su compra</a>                            
+                            </li>    
+                        </ul>
+                        <div class="gap gap-small"></div>                    
+                    </div>  
+                </form>        
+                </div>       
+            <div class="gap"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class=" gap gap-small"></div>
+<div class=" gap gap-small"></div>
+<footer id="footer" class="mt0">
+    <section class="footer_top">
+        <div class="footer_inner">
+            <div class="region region-footer-top">
+                <section id="block-menu_block-10" class="col-md-12 block block-menu-block block-10 pl5 pr0">
+                    <div class="sidebar_bord">
+                        <div class="contentf">
+                            <div class="menu-block-wrapper menu-block-10 menu-name-menu-top-footer parent-mlid-0 menu-level-1">
+                                <ul class="menu">
+                                    <li class="first leaf menu-mlid-722"><a rel="nofollow" href="https://www.urubus.com.uy/es/conocenos" onclick="unshowPage('');" >Conocenos</a></li>
+                                    <li class="leaf menu-mlid-723"><a rel="dofollow" href="https://www.urubus.com.uy/es/redes-sociales" onclick="unshowPage('');" >Redes sociales</a></li>
+                                    <li class="leaf menu-mlid-723"><a rel="dofollow" href="https://www.urubus.com.uy/es/conocenos/prensa" onclick="unshowPage('');" >Prensa</a></li>
+                                    <li class="leaf menu-mlid-724"><a rel="nofollow" href="https://www.urubus.com.uy/es/empleos" onclick="unshowPage('');" >Empleos</a></li>
+                                    <li class="leaf menu-mlid-725"><a rel="nofollow" href="https://www.urubus.com.uy/es/socios" onclick="unshowPage('');" title="Quieres adherir tu empresa de transporte?">Socios</a></li>
+                                    <li class="last leaf menu-mlid-726"><a rel="nofollow" href="https://www.urubus.com.uy/es/ayuda" onclick="unshowPage('');">Ayuda</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+    <section class="footer_middle">
+        <div class="footer_inner">
+            <div class="region region-footer row before-footer-logo">
+                <div id="block-block-2" class="col-xs-7 col-sm-7 col-md-6 block-block block-2" style="padding-top:0px;min-width:300px; ">
+                    <div class="contentf row">
+                        <div class="col-xs-10 col-sm-8 col-md-8  "> <img loading="lazy" class="header-logo" alt="URUBUS.com.uy" src="//d1tq1fzwp39b5w.cloudfront.net/itamambuca/prod/assets/urubus_black.png" id="footer_img" style="float: right; margin-left: 5px; margin-right: 0px;"> </div>
+                    </div>
+                </div>
+                <div id="block-views-share_links-footer_block" class="mt5 col-xs-12 col-sm-5 col-md-6 block block-block block-2" style="min-width:300px; ">
+                    <div class="sidebar_bord row">
+                        <div class="col-xs-12 col-sm-12 col-md-2">
+                            <h2>Seguinos</h2> </div>
+                        <div class="contentf col-xs-12 col-sm-12 col-md-9">
+                            <div class="view view-share-links view-id-share_links view-display-id-footer_block footer-block view-dom-id-6c65dad778f7a805a18a8071b07d67e2">
+                                <div class="view-content">
+                                    <div class="views-row views-row-6 views-row-even">
+                                        <div class="views-field views-field-field-sharelink-image">
+                                            <div class="field-content">
+                                                <a href="https://www.instagram.com/URUBUS_com_uy/" title="Instagram" target="_blank">
+                                                    <div class="sprite-icons-instagram"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="views-row views-row-3 views-row-odd">
+                                        <div class="views-field views-field-field-sharelink-image">
+                                            <div class="field-content">
+                                                <a href="https://api.whatsapp.com/send?phone=59896234713&amp;text=Hola%20URUBUS" title="Whatsapp" onclick="window.open('https://api.whatsapp.com/send?phone=59896234713&amp;text=Hola%20URUBUS','_blank')" >
+                                                    <div class=""><img loading="lazy" class="logo-img-ico" alt="" title='' src="https://www.urubus.com.uy/img/socialwhtsp.png" style="margin:0px;"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="views-row views-row-1 views-row-odd views-row-first">
+                                        <div class="views-field views-field-field-sharelink-image">
+                                            <div class="field-content">
+                                                <a href="https://www.facebook.com/URUBUS.com.uy" title="Facebook" target="_blank">
+                                                    <div class="sprite-icons-face"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="views-row views-row-2 views-row-even">
+                                        <div class="views-field views-field-field-sharelink-image">
+                                            <div class="field-content">
+                                                <a href="https://www.twitter.com/URUBUS_com_uy" title="Twitter" target="_blank">
+                                                    <div class=" " style="background-color: white;height:32px;"><img loading="lazy" class="logo-img-ico" alt="" title='' src="https://www.urubus.com.uy/img/socialx.svg" style="margin:0px;"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                    <div class="views-row views-row-1 views-row-odd views-row-first">
+                                        <div class="views-field views-field-field-sharelink-image">
+                                            <div class="field-content">
+                                                <a href="https://www.linkedin.com/company/URUBUS.com.uy" title="Linkedin" target="_blank">
+                                                    <div class="sprite-icons-linkedin"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="views-row views-row-4 views-row-even">
+                                        <div class="views-field views-field-field-sharelink-image">
+                                            <div class="field-content">
+                                                <a href="https://www.tripadvisor.com.ar/Attraction_Review-g294323-d12963923-Reviews-Urubus-Montevideo_Montevideo_Department.html" title="Leer opiniones de viajeros en Tripadvisor" target="_blank">
+                                                    <div class=""><img loading="lazy" class="logo-img-ico" alt="" title='' src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg" style="margin:0px;"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="views-row views-row-5 views-row-odd views-row-last">
+                                        <div class="views-field views-field-field-sharelink-image">
+                                            <div class="field-content">
+                                                <a href="https://www.youtube.com/channel/UCQnbcQIQ9S68w8RSPcSIqpQ" title="YouTube" target="_blank">
+                                                    <div class="sprite-icons-youtube"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <ul class="footer_cols">
+                <li class="col-sm-3 col-md-3 footer_col footer_col1">
+                    <div class="region region-footer-col1">
+                        <section id="block-menu_block-11" class="block block-menu-block block-11">
+                            <div class="sidebar_bord">
+                                <div class="sprite-icons-footer-icon-lock pull-left"></div>
+                                <h2 style="background: 0;">Compra Segura</h2>
+								<ul class=""> 
+									<li class="it visa" style="display:inline-block;">
+										<img loading="lazy" src="https://urubus.com.uy/images/footer/visa-w.webp" alt="visa" height="22">
+									</li> 
+									<li class="it master" style="display:inline-block;max-width: 134px;">
+										<img loading="lazy" src="https://urubus.com.uy/images/footer/master-w.webp" alt="master" >
+									</li> 
+									<li class="it oca" style="display:inline-block;max-width: 84px;">
+										<img loading="lazy" src="https://urubus.com.uy/images/footer/oca-w.webp" alt="oca" height="22">
+									</li> 			 			
+									<li class="it ebrou" style="display:inline-block;max-width: 134px;">
+										<div class="sprite-icons-92-footer-ebrou footer-sello" style="opacity: 1;"></div>
+									</li> 
+									<li class="it santandersupernet" style="display:inline-block;max-width: 124px;">
+										<img loading="lazy" src="https://urubus.com.uy/images/footer/santander-w.webp" alt="santander supernet">
+									</li> 
+									<li class="it bbvanet" style="display:inline-block;max-width: 134px;">
+										<img loading="lazy" src="https://urubus.com.uy/images/footer/bbva-w.webp" alt="bbvanet" height="23">
+									</li> 
+                                                                        <li class="it itau" style="display:inline-block;max-width: 134px;">
+										<img loading="lazy" src="https://urubus.com.uy/images/footer/itau-w-min.webp" alt="itaulink" height="23">
+									</li>
+									<li class="it scotiabank" style="display:inline-block;max-width: 134px;">
+										<img loading="lazy" src="https://urubus.com.uy/images/footer/scotiabank-w.webp" alt="scotiabank" height="23">
+									</li>
+									<li class="it creditel" style="display:inline-block;max-width: 134px;">
+										<img loading="lazy" src="https://urubus.com.uy/images/footer/creditel-w.webp" alt="creditel" height="27">
+									</li> 	
+									<li class="it lider" style="display:inline-block;max-width: 134px;">
+										<img loading="lazy" src="https://urubus.com.uy/images/footer/lider-w.webp" alt="lider" height="21">
+									</li>	
+									<li class="it redpagos" style="display:inline-block;max-width: 134px;">
+										<div class="sprite-icons-footer-redpagos footer-sello" style="opacity: 1;"></div>
+									</li> 
+									<li class="it abitab" style="display:inline-block;max-width: 134px;">		
+										<div class="sprite-icons-93-footer-abitab footer-sello" style="opacity: 1;"></div>
+									</li> 
+									<li class="it hsbc" style="display:inline-block;max-width: 134px;">
+										<img loading="lazy" src="https://urubus.com.uy/images/footer/hsbc-w.webp" alt="hsbc" height="30">
+									</li>	
+									<li class="it diners" style="display:inline-block;max-width: 134px;">
+										<i class="fa fa-cc-diners-club fa-3x" aria-hidden="true"></i>
+									</li>		
+									<li class="it bandes" style="display:inline-block;max-width: 134px;">
+										<img loading="lazy" src="https://urubus.com.uy/images/footer/bandes-w.webp" alt="bandes" height="30">
+									</li> 
+									<li class="it paypal" style="display:inline-block;max-width: 134px;">
+										<i class="fa fa-cc-paypal fa-3x" aria-hidden="true"></i>
+									</li>
+								</ul>    
+                        </section>
+                        <section id="block-views-lines-block" class="block block-menu-block block-11">
+                            <div class="sidebar_bord">
+                                <h2>Horarios</h2>
+                                <div class="contentf">
+                                    <div class="view view-lines view-id-lines view-display-id-block view-dom-id-925917a0dc856e33f1d622bd89df842f">
+                                        <div class="view-header">
+                                            <div class="sprite-icons-footer-white-small-arrow"></div><a style="pointer-events: none;cursor: default;"> Seleccione una Línea</a> </div>
+                                        <div class="view-content">
+                                            <div class="item-list">
+                                                <ul>
+                                                    <li class="views-row views-row-1 views-row-odd views-row-first">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a href="https://www.urubus.com.uy/es/Colonia-a-Montevideo" onclick="unshowPage('');" >Colonia a Montevideo</a></span> </div>
+                                                    </li>
+                                                    <li class="views-row views-row-2 views-row-even">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a href="https://www.urubus.com.uy/es/Montevideo-a-Piriapolis" onclick="unshowPage('');">Montevideo a Piriápolis</a></span> </div>
+                                                    </li>
+                                                    <li class="views-row views-row-2 views-row-even">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a href="https://www.urubus.com.uy/es/Montevideo-a-Punta-del-este" onclick="unshowPage('');">Montevideo a Punta del este</a></span> </div>
+                                                    </li>
+                                                    <li class="views-row views-row-2 views-row-even">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a href="https://www.urubus.com.uy/es/Punta-del-este-a-Aeropuerto-Carrasco" onclick="unshowPage('');">Punta del este a Aeropuerto Carrasco</a></span> </div>
+                                                    </li>
+                                                    <li class="views-row views-row-4 views-row-even">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a href="https://www.urubus.com.uy/es/Montevideo-a-Jose-Ignacio" onclick="unshowPage('');">Montevideo a José Ignacio</a></span> </div>
+                                                    </li>
+                                                    <li class="views-row views-row-3 views-row-odd">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a href="https://www.urubus.com.uy/es/Montevideo-a-Punta-del-Diablo" onclick="unshowPage('');">Montevideo a Punta del Diablo</a></span> </div>
+                                                    </li>
+                                                    <li class="views-row views-row-4 views-row-even">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a href="https://www.urubus.com.uy/es/Montevideo-a-Durazno" onclick="unshowPage('');">Montevideo a Durazno</a></span> </div>
+                                                    </li>
+                                                    <li class="views-row views-row-4 views-row-even">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a href="https://www.urubus.com.uy/es/Montevideo-a-Carmelo" onclick="unshowPage('');">Montevideo a Carmelo</a></span> </div>
+                                                    </li>
+                                                    <li class="views-row views-row-4 views-row-even">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a href="https://www.urubus.com.uy/es/Montevideo-a-Paso-de-los-Toros" onclick="unshowPage('');">Montevideo a Paso de los Toros</a></span> </div>
+                                                    </li>
+                                                    <li class="views-row views-row-4 views-row-even">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a href="https://www.urubus.com.uy/es/Montevideo-a-Tacuarembo" onclick="unshowPage('');">Montevideo a Tacuarembó</a></span> </div>
+                                                    </li>
+                                                    <li class="views-row views-row-4 views-row-even">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a href="https://www.urubus.com.uy/es/Montevideo-a-Salto" onclick="unshowPage('');">Montevideo a Salto</a></span> </div>
+                                                    </li>
+                                                    <li class="views-row views-row-2 views-row-even">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a href="https://www.urubus.com.uy/es/Minas-a-Punta-del-Este" onclick="unshowPage('');">Minas a Punta del Este</a></span> </div>
+                                                    </li>
+                                                    <li class="views-row views-row-5 views-row-odd">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a href="https://www.urubus.com.uy/es/Salto-a-Porto-Alegre" onclick="unshowPage('');">Salto a Porto Alegre</a></span> </div>
+                                                    </li>
+                                                    <li class="views-row views-row-6 views-row-even">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a href="https://www.urubus.com.uy/es/Montevideo-a-La-Pedrera" onclick="unshowPage('');">Montevideo a La Pedrera</a></span> </div>
+                                                    </li>
+                                                    <li class="views-row views-row-7 views-row-odd">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a href="https://www.urubus.com.uy/es/Montevideo-a-Maldonado" onclick="unshowPage('');">Montevideo a Maldonado</a></span> </div>
+                                                    </li>
+                                                    <li class="views-row views-row-8 views-row-even">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a href="https://www.urubus.com.uy/es/Montevideo-a-Rivera" onclick="unshowPage('');">Montevideo a Rivera</a></span> </div>
+                                                    </li>
+                                                    <li class="views-row views-row-4 views-row-even">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a href="https://www.urubus.com.uy/es/Montevideo-a-Artigas" onclick="unshowPage('');">Montevideo a Artigas</a></span> </div>
+                                                    </li>
+                                                    <li class="views-row views-row-9 views-row-odd">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a href="https://www.urubus.com.uy/es/Rivera-a-Florianopolis" onclick="unshowPage('');">Rivera a Florianopolis</a></span> </div>
+                                                    </li>
+                                                    <li class="views-row views-row-10 views-row-even views-row-last">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a href="https://www.urubus.com.uy/es/Montevideo-a-Buenos-Aires" onclick="unshowPage('');">Montevideo a Buenos Aires</a></span> </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </li>
+                <li class="col-sm-2 col-md-3 footer_col footer_col2">
+                    <div class="region region-footer-col2">
+                        <section id="block-menu_block-12" class="block block-menu-block block-12">
+                            <div class="sidebar_bord">
+                                <h2>Viaje</h2>
+                                <div class="contentf">
+                                    <div class="view view-lines view-id-lines view-display-id-block view-dom-id-925917a0dc856e33f1d622bd89df842f">
+                                        <div class="view-header">
+                                            <div class="sprite-icons-footer-white-small-arrow"></div><a rel="nofollow" href="https://www.urubus.com.uy/es/antes-de-viajar/antes-de-viajar-en-omnibus-micros-uruguay"> Antes de Viajar</a> </div>
+                                        <div class="view-content">
+                                            <div class="item-list">
+                                                <ul>
+                                                    <li class="views-row views-row-1 views-row-odd views-row-first">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a rel="nofollow" href="https://www.urubus.com.uy/es/antes-de-viajar/venta-de-pasajes-omnibus-micros-uruguay">Venta de pasajes</a></span> </div>
+                                                    </li>
+                                                    <li class="views-row views-row-2 views-row-even">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a rel="nofollow" href="https://www.urubus.com.uy/es/antes-de-viajar/terminal-estacion-de-salida">Terminal de Salida</a></span> </div>
+                                                    </li>
+                                                    <li class="views-row views-row-3 views-row-odd">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a rel="nofollow" href="https://www.urubus.com.uy/es/antes-de-viajar/pasajes-de-omnibus-micros-uruguay">Pasajes</a></span> </div>
+                                                    </li>
+                                                    <li class="views-row views-row-4 views-row-even">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a rel="nofollow" href="https://www.urubus.com.uy/es/antes-de-viajar/documento-de-identidad-omnibus-micros-uruguay">Documento de Identidad</a></span> </div>
+                                                    </li>
+                                                    <li class="views-row views-row-5 views-row-odd">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a rel="nofollow" href="https://www.urubus.com.uy/es/antes-de-viajar/equipaje-omnibus-micros-uruguay">Equipaje</a></span> </div>
+                                                    </li>
+                                                    <li class="views-row views-row-6 views-row-even">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a rel="nofollow" href="https://www.urubus.com.uy/es/antes-de-viajar/subir-al-bus-micro-uruguay">Acceso a Bordo</a></span> </div>
+                                                    </li>
+                                                    <li class="views-row views-row-7 views-row-odd">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a rel="nofollow" href="https://www.urubus.com.uy/es/antes-de-viajar/seleccion-de-asientos-buses-omnibus-micros-uruguay">Selección de Asientos</a></span> </div>
+                                                    </li>
+                                                    <li class="views-row views-row-8 views-row-even">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a rel="nofollow" href="https://www.urubus.com.uy/es/antes-de-viajar/familia-y-niños-en-buses-omnibus-micros-uruguay">Familia y Niños</a></span> </div>
+                                                    </li>
+                                                    <li class="views-row views-row-9 views-row-odd">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a rel="nofollow" href="https://www.urubus.com.uy/es/antes-de-viajar/personas-con-movilidad-reducida-omnibus-micros-uruguay">Personas con Movilidad reducida</a></span> </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="view view-lines view-id-lines view-display-id-block view-dom-id-925917a0dc856e33f1d622bd89df842f" style="margin-top:8px;">
+                                        <div class="view-header">
+                                            <div class="sprite-icons-footer-white-small-arrow"></div><a rel="nofollow" href="https://www.urubus.com.uy/es/durante-el-viaje/viajando-en-omnibus-micros-uruguay" title=""> Durante El Viaje</a> </div>
+                                        <div class="view-content">
+                                            <div class="item-list">
+                                                <ul>
+                                                    <li class="views-row views-row-1 views-row-odd views-row-first">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a rel="nofollow" href="https://www.urubus.com.uy/es/durante-el-viaje/unidades-omnibus-micros-uruguay">Ómnibus</a></span> </div>
+                                                    </li>
+                                                    <li class="views-row views-row-2 views-row-even">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a rel="nofollow" href="https://www.urubus.com.uy/es/durante-el-viaje/conductor-guarda-de-omnibus-micros-uruguay">Conductor / Guarda</a></span> </div>
+                                                    </li>
+                                                    <li class="views-row views-row-3 views-row-odd">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a rel="nofollow" href="https://www.urubus.com.uy/es/durante-el-viaje/asientos-y-confort-de-omnibus-micros-uruguay">Asientos y Confort</a></span> </div>
+                                                    </li>
+                                                    <li class="views-row views-row-4 views-row-even">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a rel="nofollow" href="https://www.urubus.com.uy/es/durante-el-viaje/servicios-a-bordo-de-omnibus-micros-uruguay">Servicios a bordo</a></span> </div>
+                                                    </li>
+                                                    <li class="views-row views-row-5 views-row-odd">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a rel="nofollow" href="https://www.urubus.com.uy/es/durante-el-viaje/informacion-omnibus-micros-uruguay">Información sobre su Viaje</a></span> </div>
+                                                    </li>
+                                                    <li class="views-row views-row-6 views-row-even">
+                                                        <div class="views-field views-field-title"> <span class="field-content"><a rel="nofollow" href="https://www.urubus.com.uy/es/durante-el-viaje/reglas-generales-en-omnibus-micros-uruguay">Reglas Generales a bordo</a></span> </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="view view-lines view-id-lines view-display-id-block view-dom-id-925917a0dc856e33f1d622bd89df842f" style="margin-top:8px;">
+                                            <div class="view-header">
+                                                <div class="sprite-icons-footer-white-small-arrow"></div><a rel="nofollow" href="https://www.urubus.com.uy/es/al-finalizar-el-viaje/" title=""> Al Llegar</a> </div>
+                                            <div class="view-content">
+                                                <div class="item-list">
+                                                    <ul>
+                                                        <li class="views-row views-row-1 views-row-odd views-row-first">
+                                                            <div class="views-field views-field-title"> <span class="field-content"><a rel="nofollow" href="https://www.urubus.com.uy/es/al-finalizar-el-viaje/desembarque-omnibus-micros-uruguay">Desembarque</a></span> </div>
+                                                        </li>
+                                                        <li class="views-row views-row-2 views-row-even">
+                                                            <div class="views-field views-field-title"> <span class="field-content"><a rel="nofollow" href="https://www.urubus.com.uy/es/al-finalizar-el-viaje/terminal-estacion-de-llegada-omnibus-micros-uruguay">Terminal de Llegada</a></span> </div>
+                                                        </li>
+                                                        <li class="views-row views-row-3 views-row-odd"> 
+                                                            <a target="_blank" href="https://g.page/URUBUS-Tus-pasajes-online?share"><img loading='lazy' style="margin:30px;width:233px" src="https://www.urubus.com.uy/es/images/footer/profile-reviews.webp" title="Read Our Reviews on Google" alt="Read Our Reviews on Google"></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </li>
+                <li class="col-sm-3 col-md-3 footer_col footer_col3">
+                    <div class="region region-footer-col3">
+                        <section id="block-menu_block-7" class="block block-menu-block block-7">
+                            <div class="sidebar_bord"> <img loading="lazy" class="logo-img-ico" alt="Conoce URUBUS" src="//d11xh5afwbv11j.cloudfront.net/hawaii/prod/assets/favicon.ico" style="float: left; margin-left: 5px; margin-right: 5px;">
+                                <h2>Conocenos</h2>
+                                <div class="contentf">
+                                    <div class="menu-block-wrapper menu-block-7 menu-name-main-menu parent-mlid-352 menu-level-1">
+                                        <ul class="menu">
+                                            <li class="first leaf menu-mlid-420"><a rel="nofollow"  href="https://www.urubus.com.uy/es/conocenos" onclick="unshowPage('');">Quienes somos</a></li>
+                                            <li class="leaf menu-mlid-1868"><a rel="dofollow"  href="https://www.urubus.com.uy/es/conocenos/por-que-viajar-con-urubus" onclick="unshowPage('');">¿Por qué viajar con URUBUS?</a></li>
+                                            <li class="leaf menu-mlid-593"><a rel="nofollow"  href="https://www.urubus.com.uy/es/conocenos/nuestros-valores" onclick="unshowPage('');">Nuestros Valores</a></li>
+                                            <li class="leaf menu-mlid-595"><a rel="nofollow"  href="https://www.urubus.com.uy/es/conocenos/equipo" onclick="unshowPage('');">Equipo</a></li>
+                                            <li class="leaf menu-mlid-790"><a href="https://www.urubus.com.uy/es/redes-sociales" rel="dofollow"  title="">Redes sociales</a></li>
+                                            <li class="leaf menu-mlid-790"><a href="https://www.urubus.com.uy/es/conocenos/prensa" rel="dofollow" onclick="unshowPage('');" title="">Prensa</a></li>
+                                            <li class="leaf menu-mlid-789"><a rel="nofollow"  href="https://www.urubus.com.uy/es/empleos" onclick="unshowPage('');" title="">Empleos @ URUBUS</a></li>
+                                            <li class="last leaf menu-mlid-2301"><a rel="nofollow"  href="https://www.urubus.com.uy/es/socios" onclick="unshowPage('');" title="Quieres adherir tu empresa de transporte?">Sea Parte de URUBUS</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="block-menu_block-7" class="block block-menu-block block-7">
+                            <div class="ssidebar_bord"> <img loading="lazy" class="" alt="Descargá la App URUBUS" src="//urubus.com.uy/images/footer/qr-urubus-app.svg" style="float: left; margin-left: 5px; margin-right: 5px;width:80px;">
+                                <h2>APP</h2>
+                                <div class="contentf">
+                                    <div class="menu-block-wrapper menu-block-7 menu-name-main-menu parent-mlid-352 menu-level-1">
+                                        <ul class="menu">                                            
+                                            <li class="leaf menu-mlid-1868"><a href="https://onelink.to/u5jb34" rel="dofollow" onclick="unshowPage('');"><i class="fa fa-apple fa-lg"></i> URUBUS iOS</a></li>
+                                            <li class="leaf menu-mlid-593"><a href="https://onelink.to/u5jb34" rel="dofollow" onclick="unshowPage('');"><i class="fa fa-android fa-lg"></i> URUBUS Android</a></li>                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="block-block-16" class="block block-block block-16">
+                            <div class="sidebar_bord">
+                                <div class="contentf">
+                                    <p>&nbsp;</p>
+                                    <ul>
+                                        <li class="mt15">
+                                                                                    <li class="mt15">
+                                            <div class="sprite-icons-footer-icon-my pull-left"></div><a rel="nofollow"  class="col-sm-10" href="https://www.urubus.com.uy/es/mis-pasajes">Mis Pasajes</a></li>
+                                        <li class="mt15">
+                                            <div class="sprite-icons-footer-icon-faq pull-left"></div><a rel="nofollow"  class="col-sm-11" href="https://www.urubus.com.uy/es/ayuda">Ayuda</a></li>
+                                        <li class="mt15">
+                                            <div class="sprite-icons-footer-icon-contact pull-left"></div><a rel="nofollow"  class="col-sm-11" href="https://www.urubus.com.uy/es/contacto">Contacto</a></li>
+                                        <li class="mt15">
+                                            <div class="sprite-icons-footer-icon-terms pull-left"></div><a rel="nofollow"  target="_blank" class="col-sm-11" href="https://www.urubus.com.uy/es/terminos-y-condiciones-generales.html">Términos y Condiciones</a></li>
+                                        <li class="mt15">
+                                            <div class="sprite-icons-footer-icon-legal pull-left"></div><a rel="nofollow" target="_blank" class="col-sm-11" href="https://www.urubus.com.uy/es/informacion-legal">Información Legal</a></li>
+                                        <li class="mt15">
+                                            <div class="sprite-icons-footer-icon-lock pull-left"></div><a rel="nofollow" target="_blank" class="col-sm-11" href="https://www.urubus.com.uy/es/politica-de-privacidad">Política de privacidad</a></li>
+                                        <li class="leaf menu-mlid-1868 mt15">
+                                            <a href="https://www.urubus.com.uy/blog/" rel="dofollow" target="_blank" style="margin-left:-12px;" ><i class="fa fa-plane fa-lg"></i>&nbsp;&nbsp;&nbsp; BLOG</a></li> 
+                                        <li class="leaf menu-mlid-1868 mt15">
+                                            <a href="https://www.urubus.com.uy/Pasos-de-Compra-URUBUS.pdf" id="link-pdf" data-urubus-app-android="0" target="_blank" rel="dofollow" style="margin-left:-12px;" ><i class="fa fa-plane fa-lg"></i>&nbsp;&nbsp;&nbsp; Pasos de Compra</a></li> 
+                                            <li class="leaf menu-mlid-1868 mt15">
+                                            <a href="https://www.urubus.com.uy/es/pagina?html_file=publicidad" id="link-pdf" data-urubus-app-android="0" target="_blank" rel="dofollow" style="margin-left:-12px;" ><i class="fa fa-rocket fa-lg"></i>&nbsp;&nbsp;&nbsp; Sponsors</a></li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </li>
+                <li class="col-xs-offset-1 col-xs10 col-sm-offset-0 col-md-offset-0 col-sm-4 col-md-3 footer_col footer_col4">
+                    <div class="region region-footer-col4">
+                        <section id="block-speed_newsletter-newsletter" class="block block-speed-newsletter block-newsletter">
+                            <div class="sidebar_bord">
+                                <div class="contentf">
+                                    <div class="offre_decouvert">
+                                        <div class="offre_decouvert_footer">
+                                            <h2>NEWSLETTER</h2>
+                                            <p style="color:#fff;" class="">Suscríbete a nuestro newsletter para recibir información y las mejores ofertas en tu email.</p>
+                                        </div>
+                                    </div>
+                                    <form name="subform" id="subform">
+                                        <div>
+                                            <div class="form-item form-type-textfield form-item-email">
+                                                <div id="myResponse" style="DISPLAY:none;"></div>
+                                                <input title="Your e-mail address" tabindex="0" class="newsletter-email-field form-text" type="email" id="email" placeholder="Su correo electrónico" name="email" value="" size="28" maxlength="80"> </div>
+                                            <input type="submit" class="btn button-glossy blue" tabindex="0" id="submit_news" name="submit_news" value="Suscríbete" style="float:right;margin:8px;">
+                                            <input type="hidden" name="form_build_id" value="v1">
+                                            <input type="hidden" name="form_id" value="newsletter">
+                                            <div id="loading" style="display:none;"></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="block-menu_block-9" class="block block-menu-block block-9">
+                            <div class="sidebar_bord">
+                                <h2>Apoyan</h2> </div>
+                        </section>
+                        <section id="block-block-3" class="block block-block sncf-footer-logo block-3">
+                            <div class="sidebar_bord">
+                                <div class="contentf">
+                                    <div class="block block-9">
+                                        <ul class="menu">
+                                            <li>
+                                                <a rel="dofollow"  href="https://marcapaisuruguay.gub.uy" target="_blank"><img loading="lazy" class="logo-img-ico" alt="Uruguay Natural" title='Uruguay Natural' src="https://d11xh5afwbv11j.cloudfront.net/hawaii/prod/assets/uruguay_natural.png" style="max-width: 136px;max-height:85px;float: left; margin-left: 5px; margin-right: 5px;"></a>
+                                            </li>
+                                            <li>
+                                                <a rel="dofollow"  href="https://anii.org.uy" target="_blank"><img loading="lazy" class="logo-img-ico" title="Agencia Nacional de Investigación e Innovación" alt="Agencia Nacional de Investigación e Innovación" src="https://d11xh5afwbv11j.cloudfront.net/hawaii/prod/assets/anii.png" style="max-width: 227px;max-height:85px;float: left; margin-left: 5px; margin-right: 5px;"></a>
+                                            </li>
+                                            <li>
+                                                <img loading="lazy" class="logo-img-ico" title="Incubadora Sinergia" alt="Incubadora Sinergia" src="https://d11xh5afwbv11j.cloudfront.net/hawaii/prod/assets/incubadora.png" style="max-width: 136px;max-height:85px;float: left; margin-left: 5px; margin-right: 5px;">
+                                            </li>
+                                            <li>
+                                                <img loading="lazy" class="logo-img-ico b-lazy" alt="URUBUS Agencia de viajes" title='Uruguay Natural' src="https://urubus.com.uy/images/mintur.jpg" style="max-width: 227px;max-height:165px;float: left; margin-left: 5px; margin-right: 5px;">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="footer_bottom">
+        <section class="footer_inner">
+            <div class="region region-footer-bottom">
+                <section id="block-menu_block-4" class="col-md-12 block block-menu-block block-4 pl5 pr5">
+                    <div class="sidebar_bord">
+                        <div class="contentf">
+                            <div class="menu-block-wrapper menu-block-4 menu-name-menu-footer parent-mlid-0 menu-level-1">
+                                <ul class="menu" id="footer_madeLove" >
+                                    <li class="last leaf menu-mlid-441" style="padding-left: 0px;padding-right: 5px;" >
+                                        <p>URUBUS.com.uy ©2025 </p>
+                                    </li>
+                                    <li class="last leaf menu-mlid-442 big" style="padding: 0;">
+                                        <p>- &nbsp;Hecho con <i class="fa fa-heart"></i> en Uruguay</p>
+                                    </li>
+                                    <li class="last leaf menu-mlid-442 small">
+                                        <p>- &nbsp;Made with <i class="fa fa-heart"></i> in <img loading="lazy" id="footer_uy" src="//d1tq1fzwp39b5w.cloudfront.net/itamambuca/prod/assets/uy.png" alt="Uruguay" title="Uruguay"></p></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu-block-wrapper menu-block-4 menu-name-menu-footer parent-mlid-0 menu-level-1" style="border:0;margin:0;">
+                                <ul class="menu" id="footer_phones">
+                                    <li class="leaf menu-mlid-442"><a rel="nofollow"  href="mailto:info@urubus.com.uy?Subject=Contacto%20desde%20la%20web" target=""><i class="fa fa-envelope"></i> info@urubus.com.uy</a></li>
+<!--                                    <li class="leaf menu-mlid-442"><a rel="nofollow" target="" href="https://api.whatsapp.com/send?phone=59892286224&amp;text=Hola%20URUBUS%21%0A"><i class="fa fa-whatsapp"></i> WhatsApp: +598 92 286 224</a></li>-->
+                                    <li class="leaf menu-mlid-442"><a rel="nofollow" target="_blank" href=https://api.whatsapp.com/send?phone=59896234713&amp;text=Hola%20URUBUS%21%0A><i class="fa fa-whatsapp"></i> WhatsApp: +598 92 286 224</a></li>
+                                    <li class="leaf menu-mlid-442"><a rel="nofollow" href="#" onclick="Tawk_API.toggle()"><i class="fa fa-commenting-o"></i> Chat</a></li>
+                                       
+                                </ul>
+                            </div>
+                            <div class="menu-block-wrapper menu-block-4 menu-name-menu-footer parent-mlid-0 menu-level-1" style="border:0;margin:0;">
+                                <ul class="menu" id="footer_phones_small">
+                                    <li class="leaf menu-mlid-442"><a rel="nofollow"  href="mailto:info@urubus.com.uy?Subject=Contacto%20desde%20la%20web" target=""><i class="fa fa-envelope"></i> info@urubus.com.uy</a></li>
+<!--                                    <a  onclick="window.open('https://docs.google.com/viewer?url=https://www.africau.edu/images/default/sample.pdf','_blank')"> Contacto PDF </a>-->
+                                        
+										                                </ul>
+                            </div>
+                            <div class="menu-block-wrapper menu-block-4 menu-name-menu-footer parent-mlid-0 menu-level-1" id="footer_phones_small_wrap" style="border:0;margin:0;">
+                                <ul class="menu" id="footer_phones_small">
+<!--                                    <li class="leaf menu-mlid-442"><a rel="nofollow" href="https://api.whatsapp.com/send?phone=59892286224&amp;text=Hola%20URUBUS%21%0A" ><i class="fa fa-whatsapp"></i> WhatsApp: +598 92 286 224</a></li>-->
+<li class="leaf menu-mlid-442 hidden"><a rel="nofollow" href="https://api.whatsapp.com/send?phone=59896234713&amp;text=Hola%20URUBUS%21%0A" ><i class="fa fa-whatsapp"></i> WhatsApp: +598 92 286 224</a></li>
+<li class="leaf menu-mlid-442"><a rel="nofollow" href="#" onclick="Tawk_API.toggle()"><i class="fa fa-commenting-o"></i> Chat</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-block-wrapper menu-block-4 menu-name-menu-footer parent-mlid-0 menu-level-1" style="border:0;margin:0;">
+                                <ul class="menu" id="footer_phones_small">
+                                    <li class="last leaf menu-mlid-442"><a rel="follow"  href="tel:+598 92 286 224"><i class="fa fa-phone"></i> Tel: +598 92 286 224</a></li>
+                                        
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </section>
+</footer>
+
+
+
+
+<!-- 
+<script>
+//    data-urubus-app-android="0"  TENEMOS QUE AGREGAR ESTE SCRIPT Y ESTE ATRIBUTO AL BOTON DE DESCARGAR PASAJE, Y ASOCIARLE ESE ID
+//    EJEMPLO <a id="link-pdf" data-urubus-app-android="0" href="https://urubus.com.uy/images/Bandera-URUBUS.pdf"> DESCARGA PASAJE</a>
+    var element = document.getElementById('link-pdf');
+if (element != null) 
+{
+
+    document.getElementById('link-pdf').addEventListener('click', function(event) {
+        const urubusAppAndroid = this.getAttribute('data-urubus-app-android');  //este elemento verifica si es la app de android
+        if (urubusAppAndroid === "1") {
+            event.preventDefault();
+            console.log('First click on #link-pdf');
+            const originalHref = this.href;
+       //     for (let i = 0; i < 2; i++) {  //el 2 representa todas las veces que se ejecuta el link
+         //       setTimeout(() => {
+           //         window.location.href = originalHref;
+    //            }, 100);
+        //    }
+
+        }
+        else{
+            console.log('Second click on #link-pdf');
+        }
+    });
+}
+</script>
+ -->
+
+
+<script>
+//    data-urubus-app-android="0"  TENEMOS QUE AGREGAR ESTE SCRIPT Y ESTE ATRIBUTO AL BOTON DE DESCARGAR PASAJE, Y ASOCIARLE ESE ID
+//    EJEMPLO <a id="link-pdf" data-urubus-app-android="0" href="https://urubus.com.uy/images/Bandera-URUBUS.pdf"> DESCARGA PASAJE</a>
+
+    // 🔹 Captura todos los enlaces con id exactamente igual a "link-pdf"
+document.querySelectorAll('#link-pdf').forEach(link => {
+    link.addEventListener('click', function(event) {
+        const urubusAppAndroid = this.getAttribute('data-urubus-app-android');
+        const originalHref = this.href;
+
+        if (urubusAppAndroid === "1") {
+            event.preventDefault();
+            console.log(`Click detectado en link-pdf: ${originalHref}`);
+
+            // Ejecutar el link 2 veces con leve delay
+            for (let i = 0; i < 2; i++) {
+                setTimeout(() => {
+                    window.location.href = originalHref;
+                }, 100);
+            }
+        } else {
+            console.log(`Click en link-pdf (no app Android): ${originalHref}`);
+        }
+    });
+});
+
+</script>
+
+<!-- CON CLASES
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.link-pdf').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      var isAndroidApp = this.getAttribute('data-urubus-app-android') === '1';
+      if (!isAndroidApp) return;
+      e.preventDefault();
+
+      var url = this.href;
+      var bust = url + (url.indexOf('?') > -1 ? '&' : '?') + 'ts=' + Date.now();
+
+      // Intento 1: abrir en nueva ventana (_blank)
+      try {
+        var a = document.createElement('a');
+        a.href = bust;
+        a.target = '_blank';
+        a.rel = 'noopener';
+        document.body.appendChild(a);
+        a.click();
+        setTimeout(function () { a.remove(); }, 0);
+        return;
+      } catch (err1) {}
+
+      // Intento 2: abrir en la misma vista con cache-busting
+      try {
+        window.location.assign(bust);
+        return;
+      } catch (err2) {}
+
+      // Intento 3: fallback con Google Docs Viewer
+      try {
+        var viewer = 'https://docs.google.com/gview?embedded=1&url=' + encodeURIComponent(url);
+        window.location.assign(viewer);
+      } catch (err3) {}
+    });
+  });
+});
+</script> -->    <script type="text/javascript">var _FROM_CITY_ERROR = "Por favor seleccione un Origen";var _LANG = "es";var _TO_CITY_ERROR = "Por favor seleccione un Destino";var _DEFAULT_DATE = "dd/mm/aaaa";var _DEPARTURE_DATE_ERROR = "Seleccione una Fecha de Ida";var _RETURN_DATE_ERROR = "Seleccione una Fecha de Vuelta";var _RETURN_DATE_MAX_ERROR = "Fecha de vuelta inválida";var _EMAIL_IS_WRONG = "Correo electrónico inválido";var _ENTER_EMAIL_ADDRESS = "Ingrese su email";var _ENTER_PASSWORD = "Ingrese su contraseña";var _ERRORS_OCCURRED = "Han ocurrido algunos problemas.<br>Por favor intente nuevamente.";</script>  
+            <div  id="media-query"  style="display:none;"></div>    
+
+                    <script>                        
+                        var __FIRST_NAME_EMPTY_ALERT = "No ingresó su Nombre!\nPor favor intente nuevamente.";
+                        var __LAST_NAME_EMPTY_ALERT = "No ingresó su Apellido!\nPor favor intente nuevamente.";
+                        var __DOCUMENT_EMPTY_ALERT = "Documento inválido"; 
+                        var __DOCUMENT_CI_UY_ALERT = "Cédula Uruguaya inválida"
+                        var __EMAIL_EMPTY_ALERT = "No ingresó su correo electrónico!\nPor favor, vuelva a intentar."; 
+                        var __EMAIL_IS_WRONG = "Correo electrónico inválido"; 
+                        var __TRIP_INTERNATIONAL = "0";
+
+                        function goNext1(){                                                                                
+                          document.forms["form"].action="./summary_booking"
+                          document.forms["form"].submit();
+                          return true;
+                        }
+
+                        function goBack(){
+                            setTimeout(function(){location.href=""}, 0);                                                     
+                        }
+
+                        $(function() {    
+
+
+                        });	
+                  </script>
+<script type="text/javascript" >var __BASE_PATH = "https://www.urubus.com.uy/";var __USER_PICTURE = "//d11xh5afwbv11j.cloudfront.net/hawaii/prod/assets/user_40x40.png";var _FROM_CITY_ERROR = "Por favor seleccione un Origen";var _LANG = "es";var _TO_CITY_ERROR = "Por favor seleccione un Destino";var _DEFAULT_DATE = "dd/mm/aaaa";var _DEPARTURE_DATE_ERROR = "Seleccione una Fecha de Ida";var _RETURN_DATE_ERROR = "Seleccione una Fecha de Vuelta";var _RETURN_DATE_MAX_ERROR = "Fecha de vuelta inválida";var _EMAIL_IS_WRONG = "Correo electrónico inválido";var _ENTER_EMAIL_ADDRESS = "Ingrese su email";var _ENTER_PASSWORD = "Ingrese su contraseña";var _ERRORS_OCCURRED = "Han ocurrido algunos problemas.<br>Por favor intente nuevamente.";var _SELECT_SEATS = "Por favor seleccione sus asientos";var _SELECT_BOARDING_POINT = "Por favor, seleccione el punto donde sube";</script>
+<script>                                                                               
+    var carousel_activo = false;
+    var __BASE_PATH ="https://www.urubus.com.uy/";         
+    var __MENU_WORD = "Menú";
+    var __USER_PICTURE = "//d11xh5afwbv11j.cloudfront.net/hawaii/prod/assets/user_40x40.png";  
+    var __IN_PROCESS ="true";
+    var __REST_TIME ="4"; 
+    var __TWITTER_LINK = "https://www.twitter.com/URUBUS_com_uy";
+    var __FACEBOOK_LINK = "https://www.facebook.com/URUBUS.com.uy";
+    var __MAIL_INFO = "info@urubus.com.uy";    
+    var __BOARDING_POINT = "Asciende en";
+    var __SELECTED_SEATS = "Asientos seleccionados";
+    var __SELECTED_SEATS_QUESTION = "Desea continuar con su Reserva?";
+    var __SELECTED_SEAT = "Asiento seleccionado";        
+    var __FIRST_NAME_EMPTY_ALERT = "No ingresó su Nombre!\nPor favor intente nuevamente.";
+    var __LAST_NAME_EMPTY_ALERT = "No ingresó su Apellido!\nPor favor intente nuevamente.";   
+    var __DOCUMENT_EMPTY_ALERT  = "Documento inválido"; 
+    var __EMAIL_EMPTY_ALERT = "No ingresó su correo electrónico!\nPor favor, vuelva a intentar."; 
+    var __EMAIL_IS_WRONG = "Correo electrónico inválido"; 
+    var __TIME_SESSION_BOOKING = "Tiempo máximo de compra";    
+    var _SELECT_BOARDING_POINT = "Por favor, seleccione el punto donde sube";     
+    var __PAYMENT_TYPE = "Medio de Pago"; 
+    var __CONFIRM = "Confirma";
+        
+    
+</script>
+            <script async src="https://www.urubus.com.uy/js/validator.min.js"></script>
+           <script src="//d3ahsa7yh64agn.cloudfront.net/jbay/prod/assets/main.js" ></script>
+           <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+            <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+            <script>window.jQuery || document.write('<script src="https://www.urubus.com.uy/js/bootstrap.min.js">\x3C/script>')</script>
+
+
+            <script async>setTimeout(function() { 
+            window.location.href = "error?fatal=1&e_i=TRN_MONTO_TOTAL_0&e_d=Sesión expirada"; 
+         }, __REST_TIME * 60 * 1000);
+      
+            </script>
+            
+            <script src="https://www.urubus.com.uy/js/custom.min.js?4"></script>  
+            <script async>setTimeout(function() { 
+            window.location.href = "https://www.urubus.com.uy/es/antes-de-viajar/seleccion-de-asientos-buses-omnibus-micros-uruguay"; 
+         }, 3 * 60 * 1000);</script>
+            <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-PRNBGVTHE2"></script> <script>   window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());    gtag('config', 'G-PRNBGVTHE2'); </script> 
+            
+        </div>
+		<script type='text/javascript'>var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();(function(){var s1=document.createElement('script'),s0=document.getElementsByTagName('script')[0];s1.async=true;s1.src='https://embed.tawk.to/59400927282a395fdf74c783/default';s1.charset='UTF-8';s1.setAttribute('crossorigin','*');s0.parentNode.insertBefore(s1,s0);})();</script>
+    </body>
+</html>
+
+
